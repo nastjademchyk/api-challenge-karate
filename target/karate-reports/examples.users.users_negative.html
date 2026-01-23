@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"b010ffd0-85f1-4f0b-b366-5a35e77d0ad1",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.users.users_negative</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>local</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-23 04:12:36 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Cannot create user without email</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/users/users_negative.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Users</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">negative</a><a class="badge badge-primary" href="karate-tags.html">functional</a><a class="badge badge-primary" href="karate-tags.html">allTests</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Cannot create user without email</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>237</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:12:36.466 karate.env system property was: local 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;user&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { name: &#39;Chelsia&#39;, surname: &#39;Demchyk&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">234</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">16:12:36.471 request:
+1 &gt; POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 38
+1 &gt; Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Chelsia&quot;,&quot;surname&quot;:&quot;Demchyk&quot;}
+
+16:12:36.702 response time in milliseconds: 231
+1 &lt; 400
+1 &lt; Date: Fri, 23 Jan 2026 15:12:36 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 220
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; ETag: W/&quot;dc-AgC/P+dQJQ+uzvUAVLzvI516zpE&quot;
+1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 &lt; Pragma: no-cache
+1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW1R7-U2AVxtjBZ9QlLaID9HBP8WLG0Ey2K8pq5HhdmM6uyUmRZOJwEibNq5VUMtJ0SggZeJay6cbf2fo74FZlQu9sdt14dVuEdgF0ohhiqs0mMW-Hs_w_W69FPSjfZshIqQ7fz76PLIn2UaKw-dVbolArbz2FAV0so6UVID2vpIIX6CqgXxoR6L1Mf0U4BwJ6fHMBmuF85VPs66Miho8XuqBllYjdOlJ2uHPUdsKQ6eMuQ3sHx2IQQVCZA1IPX-_w8vdFmVEiKVDYfNvwN0wKR7waSmdIoC5yzQM8dprfqUgEw27ks9fD02UqyUJBjH2-jsy7HBdovrzMGvITeahx_6-WD6wqqUXHvr46WhtTv84eJz8UepIokpv7R4jC9_HCSTMQ1gZuDJNtmimXFrH0I2G7wED8rS6PvNl40I8Y9s6XjAqZ6AbqJOZf7wYFvQpIadUuYEQCvul5rmgwIoOmxYrhNGr6NxSgcZa4flIe-2ArZf8ZjuvcVkwpJwsK0FKV74iSKrQcJaK3WnaRIYBW19f8FVaIuVxqtxQLFln-PPmgjQEbgZMRUoHuUVh5N1L-7qFqlr-CaYyRbB73pT7QiVnHVrI_RTTkrybNQeB8AaonmahmauJxyoAxpU6dQb2EP2Nq_B1mHPOsHDPfBivpWxJpMPuWo87OgNIeStSG8eF_Oaf63BMFP3n8T7-HFbtEpFJKhBQFselL5BbLcR-ubMCy_XD3BG20gvjXb03oGTAl1M2k1iFXQ_FuqR2r1f-vUYZvgaUZnxTFPowPQS_gdHZeygJDwZAGNyJ-i8H9Y0SUeyajRIbayYqMpYVyaVNMPoPLoj7ncXTGC7B1Qs7TU2b6eAGP_UMKizwOP7EK6F8XsIOLtbS7F3_-HNQ52LgjZthkOb3WT3x5UBXLaDDymFXF57uFEiREjCVx4xl9EBtutISpVFENoWz6FTSO1Mt7bSaSdCNVg_nRLq_lI6K3IB; path=/; secure; samesite=none; Partitioned
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; RateLimit-Limit: HttpRequestRatePerPort:1500/m
+1 &lt; RateLimit-Limit: ClientConnectionsPerPort: max 1000
+1 &lt; RateLimit-Remaining: HttpRequestRatePerPort:1498
+1 &lt; RateLimit-Remaining: ClientConnectionsPerPort:999
+1 &lt; RateLimit-Reset: HttpRequestRatePerPort:41s
+1 &lt; X-Report-Abuse: https://msrc.microsoft.com/report/abuse
+1 &lt; x-ms-ratelimit-limit: 1500
+1 &lt; x-ms-ratelimit-remaining: 1497
+1 &lt; x-ms-ratelimit-used: 3
+1 &lt; x-ms-ratelimit-reset: 0
+1 &lt; X-Powered-By: Express
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; Referrer-Policy: same-origin
+1 &lt; VsSaaS-Request-Id: 550cbe1e-e9b9-4fc3-bd22-7e04aaea21f6
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Served-By: tunnels-prod-rel-euw-v3-cluster
+{&quot;errors&quot;:[{&quot;location&quot;:{&quot;in&quot;:&quot;request&quot;,&quot;name&quot;:&quot;body&quot;,&quot;docPath&quot;:&quot;/paths/~1user/post/requestBody/content/application~1json/schema&quot;,&quot;path&quot;:&quot;&quot;},&quot;message&quot;:&quot;must have required property &#39;email&#39;&quot;}],&quot;message&quot;:&quot;Validation errors&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

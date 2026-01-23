@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.ExamplesTest" time="8.05" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\ademchyk\Desktop\Projects\api-challenge-karate\target\test-classes;C:\Users\ademchyk\Desktop\Projects\api-challenge-karate\target\classes;C:\Users\ademchyk\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\ademchyk\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\ademchyk\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\ademchyk\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\ademchyk\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\ademchyk\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\ademchyk\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\ademchyk\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\ademchyk\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\ademchyk\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\ademchyk\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\ademchyk\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\ademchyk\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\ademchyk\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\ademchyk\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\ademchyk\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\ademchyk\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\ademchyk\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\ademchyk\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\ademchyk\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\ademchyk\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\ademchyk\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\ademchyk\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\ademchyk\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\ademchyk\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\ademchyk\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\ademchyk\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\ademchyk\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\ademchyk\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\ademchyk\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\ademchyk\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\ademchyk\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\ademchyk\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\ademchyk\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\ademchyk\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\ademchyk\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ademchyk\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\ademchyk\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ademchyk\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\ademchyk\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="karate.env" value="local"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="user.country.format" value="PL"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\ademchyk\AppData\Local\Temp\surefire14817554359338381809\surefirebooter-20260123161229502_3.jar C:\Users\ademchyk\AppData\Local\Temp\surefire14817554359338381809 2026-01-23T16-12-29_357-jvmRun1 surefire-20260123161229502_1tmp surefire_0-20260123161229502_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\ademchyk\Desktop\Projects\api-challenge-karate\target\test-classes;C:\Users\ademchyk\Desktop\Projects\api-challenge-karate\target\classes;C:\Users\ademchyk\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\ademchyk\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\ademchyk\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\ademchyk\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\ademchyk\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\ademchyk\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\ademchyk\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\ademchyk\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\ademchyk\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\ademchyk\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\ademchyk\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\ademchyk\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\ademchyk\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\ademchyk\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\ademchyk\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\ademchyk\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\ademchyk\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\ademchyk\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\ademchyk\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\ademchyk\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\ademchyk\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\ademchyk\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\ademchyk\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\ademchyk\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\ademchyk\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\ademchyk\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\ademchyk\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\ademchyk\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\ademchyk\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\ademchyk\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\ademchyk\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\ademchyk\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\ademchyk\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\ademchyk\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\ademchyk\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\ademchyk\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ademchyk\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\ademchyk\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ademchyk\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\ademchyk\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\ademchyk"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.6.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\ademchyk\Desktop\Projects\api-challenge-karate"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="karate.options" value="--tags @allTests"/>
+    <property name="surefire.real.class.path" value="C:\Users\ademchyk\AppData\Local\Temp\surefire14817554359338381809\surefirebooter-20260123161229502_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.6+7-LTS"/>
+    <property name="user.name" value="ademchyk"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.6+7"/>
+    <property name="localRepository" value="C:\Users\ademchyk\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\ademchyk\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.6"/>
+    <property name="user.dir" value="C:\Users\ademchyk\Desktop\Projects\api-challenge-karate"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.language.format" value="pl"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\ademchyk\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ademchyk\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\ServiceNow\agent-client-collector\bin;C:\Program Files\ServiceNow\agent-client-collector\embedded\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\170\Tools\Binn;C:\Users\ademchyk\AppData\Local\Microsoft\WindowsApps;C:\Users\ademchyk\.dotnet\tools;C:\Program Files\apache-maven-3.9.12\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.6+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="[1:10] Cannot create booking for a non-existing user" classname="examples/bookings/booking_negative" time="2.24">
+    <system-out><![CDATA[16:12:31.530 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @allTests
+16:12:31.624 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': local
+16:12:32.114 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:12:33.378 [main] INFO  com.intuit.karate - karate.env system property was: local 
+16:12:33.772 [main] DEBUG com.intuit.karate - request:
+1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 69
+1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"date":"2026-01-23","destination":"POL","origin":"USA","userId":999}
+
+16:12:34.391 [main] DEBUG com.intuit.karate - response time in milliseconds: 596
+1 < 404
+1 < Date: Fri, 23 Jan 2026 15:12:34 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache,no-store
+1 < ETag: W/"2f-a9VTEYuYh3WtrE4wZNImiYloJ0s"
+1 < Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 < Pragma: no-cache
+1 < Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW1O87Aw8JCgrSTOGX0jnDzpkBE7XZdTRP4d-ZHPpMBCdvJ-TuzvQHiTyMhuT8PJ3fx4LQiLCnMfkNophmNjeVphTiurjFCoR76-zN62FgVIJTe9qFOa9DkHfHRexh_DMP_HLs1_Ez--e-BcAh_JGJ-BJ60kOA63RJlNy3e_uY6dMgGew03BLB6g25bHQ_h6VOVtc40L0bzsZRxCh1mlHVZ7e1Sg8vDBFKPwmtA76JErjEy8gFdsZBISVlbLq--pSqzD3JdwfPJrW2AbRjUynwgdhKtZIf_lSvuY687lfWdFU9cXu246_fQNqMafxZInjdH1eEa_y4MkPoEkhGkSJx9QIS19bTrf07F--JwZF7imH3K0CHEs369Gfn7g58MnWSeRGzEnvRoX1DdJSTIxkPIPAvdhSEnsdliDDkemMUK4dfvGJ61a8IPk_vWk9oB4PHAfRiP-Z2UD6m1173oOP341XW41DnbcRy8FtF3rwGRRTrxVr4_xjKEOIXv_J3u5z1iFVzGTzqUjNdWEtNgDuBX009gLlLvklX_JXu8PH3V4KfEeR0h4T5h8HK7g4r6ljVZkL6mJhqrwYevjEIPP78HMLo2gIbQ1rBU63KSl0FmGXUH8-ICdZs2_JxvjMHdzBblLpsku5I2uSkOMxLTQSqBhVJDu4sslvRTYd7zwhD5ndOWvb_i-bR_wcSYA8AksTtA8mdh3bcBpyYxDbU5P6L7vdsRjU6JqWFP79XE1awYCoYv7BNJJCoUokNxY9XrVMud-aRZmSGfZwOI-p7wsrHnDOL32ITM0DOtUNDl5to6phG5FiApR8IgGAy5c-1hFrRF0oix_6RzFC9yMmjoTVvrekosErg6NtGaVrUkHTwVmHYM8f7AmIF7NM8c3mahb8K_OleZtoIX7eSCYQRAcvHcXekjFJJfv9mPqmUYqQC47_TSgdg5sFMcraZDQmfRS8ZTobPQlNL-ue0Yt9-Ot0qrL; path=/; secure; samesite=none; Partitioned
+1 < X-Content-Type-Options: nosniff
+1 < RateLimit-Limit: HttpRequestRatePerPort:1500/m
+1 < RateLimit-Remaining: HttpRequestRatePerPort:1499
+1 < RateLimit-Reset: HttpRequestRatePerPort:44s
+1 < X-Report-Abuse: https://msrc.microsoft.com/report/abuse
+1 < x-ms-ratelimit-limit: 1500
+1 < x-ms-ratelimit-remaining: 1497
+1 < x-ms-ratelimit-used: 3
+1 < x-ms-ratelimit-reset: 0
+1 < X-Powered-By: Express
+1 < X-Robots-Tag: noindex, nofollow
+1 < Referrer-Policy: same-origin
+1 < VsSaaS-Request-Id: fa3e9d34-a7cf-46c1-b3b4-aa8c7ccdc53f
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
+{"errors":null,"message":"No user with id 999"}
+
+---------------------------------------------------------
+feature: classpath:examples/bookings/booking_negative.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0,9782
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="[1:19] Get the list of all bookings by userID" classname="examples/bookings/booking_positive" time="0.366">
+    <system-out><![CDATA[16:12:35.571 [main] INFO  com.intuit.karate - karate.env system property was: local 
+16:12:35.626 [main] DEBUG com.intuit.karate - request:
+1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking/1
+1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:12:35.908 [main] DEBUG com.intuit.karate - response time in milliseconds: 280
+1 < 200
+1 < Date: Fri, 23 Jan 2026 15:12:35 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache,no-store
+1 < Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 < Pragma: no-cache
+1 < Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW1Gbj6-LqeBY6ffpKa_P5IE06l-Tl58Z-kA0F0umFJ2M-sfEFg1Wa74Vc5tpTTeiglear7jp6LLdwaDALCxVQOP16Edldrt_s1KuJS_8Id4DkaIjuV4yhd6VvYlhb2TNLB-sHtB-rnccskJ9WHH7VwaOfLoZ5lmHD_VM2IFQnFAwGEIzOyDMXLaHE-DvSb-JP5LQh1vo-YfIFPpXB-XtS4wAiqC0eC1_BEiBu57Ifnq_Tci61UMBMpEWyXpXGaOK1rd0yOwQ87aPkbThiN0UEZ377CHjFBaUkVejfCK9w9cjjmloizEQ7ZCGTd__bsMGAJ2eunYalzXmZXFqu3BYz26vwdpCmbOoPhZcw4ykoc5w5zkl4yQM9LFyO2WxVtyTGhqNen2jab7Fq6T3yxepHlIdXHkWSZ1bk4omgf4mo5Ib0K7cTk5P93YNwGKyFNaL51SoFEH47qxjQi0Kf72PQev8-KYFOzsuSuG2Gcgq8Yq11j67zzmXpUEV_bAsIzwi8jdIvauxYGVpoV1-i9-VSPv9uNhyTEw07QtJQw25pRQqwzXNhsNoh4j8zRFOYkp3V4uSVwgPVUOfWY7oNvfECuU7tpsJtpSRdzRyyF8E2BnD7b7nyV4E-6ouwDMiJNdlAHLzN4YIaAumIAGvO9IrqTmoJb7KDSF89OqsNowFvPMqvzHh4onwitYuZz2Gc7SZVPDYf-YfRTYCqC7oDGv6C6DHInxrBueTJOT0rO3WbkRWis1dqBH4kvs5JawgCNkL7Ff6Wq_wEOYgFzgYoTzNUvM6gDGnWIwXaZugcDZDTMP5IgZpXcH1Wu4kdakMdFdf8DZdqgY2BqDtAw5T7EKZ8E86jc2_trCp5-f0AoPR3OltxzY2SBh6YsiJ2bHMiHxuz1XZbbXZRhGXauHedGuT_53jXpVyL1VR4y2L6hLN3vmbHn4rf3VtTQSe3YEJN0JCY5a2J_Rs21JYMG6qW92Qo4w; path=/; secure; samesite=none; Partitioned
+1 < X-Content-Type-Options: nosniff
+1 < RateLimit-Limit: HttpRequestRatePerPort:1500/m
+1 < RateLimit-Remaining: HttpRequestRatePerPort:1499
+1 < RateLimit-Reset: HttpRequestRatePerPort:15s
+1 < X-Report-Abuse: https://msrc.microsoft.com/report/abuse
+1 < x-ms-ratelimit-limit: 1500
+1 < x-ms-ratelimit-remaining: 1498
+1 < x-ms-ratelimit-used: 2
+1 < x-ms-ratelimit-reset: 0
+1 < X-Powered-By: Express
+1 < X-Robots-Tag: noindex, nofollow
+1 < Referrer-Policy: same-origin
+1 < VsSaaS-Request-Id: 89d731e4-5588-461c-9aab-5744bd450eb6
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
+{"date":"2022-02-01","destination":"MAD","id":1,"origin":"WRO","userId":1}
+
+]]></system-out>
+  </testcase>
+  <testcase name="[2:25] Create new booking with valid data" classname="examples/bookings/booking_positive" time="0.527">
+    <system-out><![CDATA[16:12:35.937 [main] INFO  com.intuit.karate - karate.env system property was: local 
+16:12:35.959 [main] DEBUG com.intuit.karate - request:
+1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 67
+1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"date":"2026-01-23","destination":"USA","origin":"KRK","userId":1}
+
+16:12:36.266 [main] DEBUG com.intuit.karate - response time in milliseconds: 304
+1 < 201
+1 < Date: Fri, 23 Jan 2026 15:12:36 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache,no-store
+1 < Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 < Pragma: no-cache
+1 < Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW31UHvVe25XpTOp9gq2k4o0HL_-n1hBtVb8-FePOW9sUHYz4t_Om1hm0mu-PWOikJDpl2xztb-n89GTkFAwcon27jGusLiqoHvTsbCZK123DfL5PLoXg4JiSo-G8VFa1NTuFkgYJlkYpESRhk_FsKQ7fD2CjvIfODrG0Fj4Z3uY3JlirmQKjTn1S7gFXXDtxJjCoSc7jrIwP7yVYR6x0jYBPdq1wcxiLnZMOCGXUKOki5C-q4iUNjBaWqG4wqA5mrLpp87CE1foGF4ie-86tkntVOHcLdPO5OpNS8pLUJ1hrD8lDcun3Y_S8lMQKBiBcyAOj5lFyck_QGxo3jjGCAYBeKtkBJYO3diX2LB-V2k7C5ZIYVHFtI8Hig7wFOMGYJoUdynklyDJlnIfI9G7PafAR7EaoH9wtGQH7KIKGlAYWL6yvtAGfOZq-fR5bWbgiXgtHSS0SeB0iAHI0xQfzXapTz4M6qKbZH3m_EH_1ZSLZxaFwO44wM_2itXLSKiuXNmRhnNG7SZFFPd2nIx2QY9ljI29CwjHLIPYnIDcvHkQZfTT7XPN8qbmy00e9ER0nwg0IH7yetZdJyWfNUd-vIgK1pOTosR_g0kY_HFsEBol-vI3HEUc1BbuCCB5nC3NL_jJTKPKLbS3TV7w2IYTpEJ4s_S9rbFhXhU3ZaViGINN2suhmx1w7YXuGnsqNQkJuWUJ2Grr1IrrMmVW9c3vh1leCylLr9P08ruhrIqJYPXSqzWaj-ug5RACR3I9OAVm9XhSi6K9ThvqxszlB-MqObayNwWSk0RjFU5J6ZEMl-JZIN06I1rAy6X0spwWt8HFv_YDp8NtW1nVnfnVivV93QE0yMSAqrXOSiIVv2I90m2tT7kod8Cbc41UlkVTgyuX-QFOBXfF6nzoGu7FukRkDHW0fDqSJeRsYGQyprvep_oMu7-Vd_YT0a1dkOtGi_6AK3nhqrduyNtdFFVMnaKPHfOm; path=/; secure; samesite=none; Partitioned
+1 < X-Content-Type-Options: nosniff
+1 < RateLimit-Limit: HttpRequestRatePerPort:1500/m
+1 < RateLimit-Remaining: HttpRequestRatePerPort:1499
+1 < RateLimit-Reset: HttpRequestRatePerPort:20s
+1 < X-Report-Abuse: https://msrc.microsoft.com/report/abuse
+1 < x-ms-ratelimit-limit: 1500
+1 < x-ms-ratelimit-remaining: 1497
+1 < x-ms-ratelimit-used: 3
+1 < x-ms-ratelimit-reset: 0
+1 < X-Powered-By: Express
+1 < X-Robots-Tag: noindex, nofollow
+1 < Referrer-Policy: same-origin
+1 < VsSaaS-Request-Id: 29c3ca4d-33f0-40d2-b013-f4f957028846
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
+{"date":"2026-01-23","destination":"USA","id":14,"origin":"KRK","userId":1}
+
+---------------------------------------------------------
+feature: classpath:examples/bookings/booking_positive.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0,6803
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="[1:8] Cannot create user without email" classname="examples/users/users_negative" time="0.303">
+    <system-out><![CDATA[16:12:36.466 [main] INFO  com.intuit.karate - karate.env system property was: local 
+16:12:36.471 [main] DEBUG com.intuit.karate - request:
+1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 38
+1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Chelsia","surname":"Demchyk"}
+
+16:12:36.702 [main] DEBUG com.intuit.karate - response time in milliseconds: 231
+1 < 400
+1 < Date: Fri, 23 Jan 2026 15:12:36 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 220
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache,no-store
+1 < ETag: W/"dc-AgC/P+dQJQ+uzvUAVLzvI516zpE"
+1 < Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 < Pragma: no-cache
+1 < Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW1R7-U2AVxtjBZ9QlLaID9HBP8WLG0Ey2K8pq5HhdmM6uyUmRZOJwEibNq5VUMtJ0SggZeJay6cbf2fo74FZlQu9sdt14dVuEdgF0ohhiqs0mMW-Hs_w_W69FPSjfZshIqQ7fz76PLIn2UaKw-dVbolArbz2FAV0so6UVID2vpIIX6CqgXxoR6L1Mf0U4BwJ6fHMBmuF85VPs66Miho8XuqBllYjdOlJ2uHPUdsKQ6eMuQ3sHx2IQQVCZA1IPX-_w8vdFmVEiKVDYfNvwN0wKR7waSmdIoC5yzQM8dprfqUgEw27ks9fD02UqyUJBjH2-jsy7HBdovrzMGvITeahx_6-WD6wqqUXHvr46WhtTv84eJz8UepIokpv7R4jC9_HCSTMQ1gZuDJNtmimXFrH0I2G7wED8rS6PvNl40I8Y9s6XjAqZ6AbqJOZf7wYFvQpIadUuYEQCvul5rmgwIoOmxYrhNGr6NxSgcZa4flIe-2ArZf8ZjuvcVkwpJwsK0FKV74iSKrQcJaK3WnaRIYBW19f8FVaIuVxqtxQLFln-PPmgjQEbgZMRUoHuUVh5N1L-7qFqlr-CaYyRbB73pT7QiVnHVrI_RTTkrybNQeB8AaonmahmauJxyoAxpU6dQb2EP2Nq_B1mHPOsHDPfBivpWxJpMPuWo87OgNIeStSG8eF_Oaf63BMFP3n8T7-HFbtEpFJKhBQFselL5BbLcR-ubMCy_XD3BG20gvjXb03oGTAl1M2k1iFXQ_FuqR2r1f-vUYZvgaUZnxTFPowPQS_gdHZeygJDwZAGNyJ-i8H9Y0SUeyajRIbayYqMpYVyaVNMPoPLoj7ncXTGC7B1Qs7TU2b6eAGP_UMKizwOP7EK6F8XsIOLtbS7F3_-HNQ52LgjZthkOb3WT3x5UBXLaDDymFXF57uFEiREjCVx4xl9EBtutISpVFENoWz6FTSO1Mt7bSaSdCNVg_nRLq_lI6K3IB; path=/; secure; samesite=none; Partitioned
+1 < X-Content-Type-Options: nosniff
+1 < RateLimit-Limit: HttpRequestRatePerPort:1500/m
+1 < RateLimit-Limit: ClientConnectionsPerPort: max 1000
+1 < RateLimit-Remaining: HttpRequestRatePerPort:1498
+1 < RateLimit-Remaining: ClientConnectionsPerPort:999
+1 < RateLimit-Reset: HttpRequestRatePerPort:41s
+1 < X-Report-Abuse: https://msrc.microsoft.com/report/abuse
+1 < x-ms-ratelimit-limit: 1500
+1 < x-ms-ratelimit-remaining: 1497
+1 < x-ms-ratelimit-used: 3
+1 < x-ms-ratelimit-reset: 0
+1 < X-Powered-By: Express
+1 < X-Robots-Tag: noindex, nofollow
+1 < Referrer-Policy: same-origin
+1 < VsSaaS-Request-Id: 550cbe1e-e9b9-4fc3-bd22-7e04aaea21f6
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
+{"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1user/post/requestBody/content/application~1json/schema","path":""},"message":"must have required property 'email'"}],"message":"Validation errors"}
+
+---------------------------------------------------------
+feature: classpath:examples/users/users_negative.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0,2366
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="[1:10] Get all users" classname="examples/users/users_positive" time="0.542">
+    <system-out><![CDATA[16:12:36.769 [main] INFO  com.intuit.karate - karate.env system property was: local 
+16:12:36.775 [main] DEBUG com.intuit.karate - request:
+1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
+1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:12:37.307 [main] DEBUG com.intuit.karate - response time in milliseconds: 532
+1 < 200
+1 < Date: Fri, 23 Jan 2026 15:12:37 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache,no-store
+1 < Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 < Pragma: no-cache
+1 < Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW1EjFo0jhOP7nIYivZ1HFkagjrkdQihUMvn61FjvIt2PclQ2mDjs_dXJDMQy9jsGHfGz48q2sSgLh_Iq3f3CIMdRneGFqkJmbh99tb8rymkHwgyPp65CWBOxPFq-oL8fOsw_2QBbNaXqLrf6lHa1EDPEVECane28KRrUWZrak0Bi9CtCnAYd3wrHd2yFRWAgw16IrcP591STlJsgKPGjmzmxhZKUaEjFIT7GCaD1b6RmUVbj7r1u4Kiqm_vCPyc9p3rkF3A-QZPOsalxsNwZTAxSCj3uvflX5JftmLpW42UhmAAIBQQsrwSOYXlryeiNhVLal-Qi2PqdDk8WVYDpa3K1ENJVOqJnNN_dcjvANB3vbZRGiXeE0ehucDLjcDTuvjmw9s69Ty0Q3w2iv4pKSdLRw3VQMXnFBvwFJPz8Knj72_MgFWtVzWyGDLCLteJeA3Fsjr9PKe3Ch0Bb0YF07OxfJMHSoHerrewrJCVoM3rY-CbtPvYaMnLxk-cPqXJyFgJWvAp6ur27k7O548w5rLvKG5wEVB016h4OEF9NB3w9pmfYzdCMWtLT6jeSd3R4v83v01OT_bZ5Wy_hs3o1z7OWKt9TgpIX-dbYLqd25FYDYbt7uInT-U1mhLg_j-fPt1TWRx8uvJiQeLcwxGWjimHfoq7RZEPeoeYI9y_CdqWw1sJ9Mh56-i_e8EWunVuEX9whBD_8d-hhFljGT5ZUIFaam2Zn-cag01QauRaRuhVFlp8-l_dDXpseVlMPazwkXOueYVZ3vYSt5OAAKWAnKrKHgH8hW45EF6dfis760tucarCSqfeAOdSAOED24jb8aCWk80GcpHFRTgVd6Q7JI7Lf7XfjZNCKw_nM3WvRMBI1Wv39NR9J9VGnNKMxXCmduEkBeK-Es-A-ymvPtGUyoPMLAYXplZKJ7GZ160slnDwbs6l8eBY-NttGWMBY1lXEuWoaV8OtBexKWQywhAs1v0t; path=/; secure; samesite=none; Partitioned
+1 < X-Content-Type-Options: nosniff
+1 < RateLimit-Limit: HttpRequestRatePerPort:1500/m
+1 < RateLimit-Remaining: HttpRequestRatePerPort:1499
+1 < RateLimit-Reset: HttpRequestRatePerPort:11s
+1 < X-Report-Abuse: https://msrc.microsoft.com/report/abuse
+1 < x-ms-ratelimit-limit: 1500
+1 < x-ms-ratelimit-remaining: 1497
+1 < x-ms-ratelimit-used: 3
+1 < x-ms-ratelimit-reset: 0
+1 < X-Powered-By: Express
+1 < X-Robots-Tag: noindex, nofollow
+1 < Referrer-Policy: same-origin
+1 < VsSaaS-Request-Id: 4ac8adcb-e506-45a2-b0cd-7e64e32c6539
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
+[{"email":"john.doe@wherever.com","id":1,"name":"John","surname":"Doe"},{"email":"jane.doe@somewhere.com","id":2,"name":"Jane","surname":"Doe"},{"email":"chelsia@example.com","id":3,"name":"Chelsia","surname":"Demchyk"},{"email":"obama@example.com","id":4,"name":"Chelsia","surname":"Demchyk"},{"email":"kiev@example.com","id":5,"name":"Chelsia","surname":"Demchyk"},{"email":"user_1769180815118@example.com","id":6,"name":"Chelsia","surname":"Demchyk"},{"email":"user_1769181039991@example.com","id":7,"name":"Chelsia","surname":"Demchyk"}]
+
+]]></system-out>
+  </testcase>
+  <testcase name="[2:16] Get the user by ID" classname="examples/users/users_positive" time="0.276">
+    <system-out><![CDATA[16:12:37.326 [main] INFO  com.intuit.karate - karate.env system property was: local 
+16:12:37.334 [main] DEBUG com.intuit.karate - request:
+1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user/1
+1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:12:37.594 [main] DEBUG com.intuit.karate - response time in milliseconds: 260
+1 < 200
+1 < Date: Fri, 23 Jan 2026 15:12:37 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache,no-store
+1 < Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 < Pragma: no-cache
+1 < Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW0JZGUqQ6xjFgIKy5_4Cb7B7BFRiNcYgxA24KJj8o2QB_ComFMwwTTXMgZaExA1hjs7RjDHqi2Kyq2ByevdsXEm5RrLp346D0pPum39Un1Q56Y_OLlF8n7V2wsDHrJuGjyj9bXHZ47NZm8R2ZXHeatNW-KRx1qTozCyv_96CEsQSKI-cSWzeLONUChTUYXRzpNH3CcFlnxwAqL9eTMmLTxfGKYe0BRrssq4jksVgDgVXCyLdFGprEQaeGvreQjCgTrZIOKWStx_n7R6W0LqT15YZ6J0bXJoBltqkNOS2X13IiF8t3oDXy8cPimjt1VEcPM4GZxaY0L1ZtQ16TE5Hvh22zMofjve0drqQai2ryp3kyyGcuBvTojwfaXXwShqVm9qlTaBE-c5ICTkH0zBYRmyrHphJv3JOVp34QD0Qz6lT-ZrSj5oq36YGZ88CuSan3f5ywY1PHoFWUo5qe0qpzju8WqXY0JHtfVBOK-TDTpE0DKhH6fgO9kwxsRlfSDnUNo3e7miX37B8DAVL6aPlp6j1YHdlpkZJiVKODxL7Z0ssULj8ceiqDjjntAN4Y2AIFK9ZbeEGLgYw1mUuDvBUwcMv61R8sP11vfl1f-NXHM8Q54KmOc-aUuZO40GDOcZ0kuZiE1SNhSYz2gBqFV_zvU52Xv2gRQRr3JslXpTvNNL69ThmhQWVQSXdxQxPCAVAbPLB0LxWTzTbPNt53whsDsx0EnTv65_wgFOXLeR-YXhUjwgjS5cZ9WmurynD_P8awEnCWFeY3hhZxjyq_IU_ammDKrW1ZYLgUHy1xb9no48v8gfWEaCOEQBjt-zd3gYmA5qatmIcN1B_1brgs1E3yozbrnYz3MiP47iMncBhJqapnzLooNx1cd75DDH7lQEs8kH-fVVeK__XNNxBdBnDGPkkeAPgWap1I5Fo6H8DJvow9d4i6uodqAsLcfpkNa5NrAfX9qUtUCuIzmmaBDLHIwI; path=/; secure; samesite=none; Partitioned
+1 < X-Content-Type-Options: nosniff
+1 < RateLimit-Limit: HttpRequestRatePerPort:1500/m
+1 < RateLimit-Limit: ClientConnectionsPerPort: max 1000
+1 < RateLimit-Remaining: HttpRequestRatePerPort:1499
+1 < RateLimit-Remaining: ClientConnectionsPerPort:999
+1 < RateLimit-Reset: HttpRequestRatePerPort:55s
+1 < X-Report-Abuse: https://msrc.microsoft.com/report/abuse
+1 < x-ms-ratelimit-limit: 1500
+1 < x-ms-ratelimit-remaining: 1497
+1 < x-ms-ratelimit-used: 3
+1 < x-ms-ratelimit-reset: 0
+1 < X-Powered-By: Express
+1 < X-Robots-Tag: noindex, nofollow
+1 < Referrer-Policy: same-origin
+1 < VsSaaS-Request-Id: 13985914-cddd-47e6-898f-ba1b6d2b7e72
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
+{"email":"john.doe@wherever.com","id":1,"name":"John","surname":"Doe"}
+
+]]></system-out>
+  </testcase>
+  <testcase name="[3:24] Create new user with valid email address" classname="examples/users/users_positive" time="0.927">
+    <system-out><![CDATA[16:12:37.610 [main] INFO  com.intuit.karate - karate.env system property was: local 
+16:12:37.637 [main] DEBUG com.intuit.karate - request:
+1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 79
+1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"email":"user_1769181157617@example.com","name":"Chelsia","surname":"Demchyk"}
+
+16:12:38.283 [main] DEBUG com.intuit.karate - response time in milliseconds: 644
+1 < 201
+1 < Date: Fri, 23 Jan 2026 15:12:38 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache,no-store
+1 < Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 < Pragma: no-cache
+1 < Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW1s9jnRdxHP2WUR8UX5C9eb_N7NtCNvULNi9UP9yIVZ5GPIMNnVM2v2thBs3Y9Iw4O-OIyxMJlML2I7aLfLt4wDl5QQ99xFjXcP8IUZ4N04cSzmDpp0BcPc9-bMqDP1ZOVQP_hR-lthSote12KMRHLCunApRLF_atQOXxTOfoRojhmrQGWTf_oGsjcdEwK1DR87Zfp88fRWpbqXHhkEW4DpsZiWoYq-jODOtay9z_AC6s205p4QkzMIZ19cJABqwkyt3d9ZPQQ8n-JZVxIF4YPNdO2P-_0EKo8Jo_uOWB5Tew9snIS6TZrL-nSE5WSA_5en8r8VIsEks5oc3O9QZ8NNxZAVXI55-eId07R_pqts_Y_1cBARLcO2nQIgUYr_QX92zkewaGgJ9yXDZHrpyRDzKJbSE9VlbBLsUAfCekJQFrrK5VrYzGZn7yTFmRKLtO4CA5jO14Fab3OT7ctYs8oWnV0UQwVNYVyRkuFNU2EEJrjOT78jBS7pDTa3B0isVmY0zdMiUHOvenT-_sRW_ZqKZlzQwiMBs3nEOOD4qFL6isWiBD_otFTFnwleJz-4wwqslmV_yH6ry9Op_OG17zV20bdJB1pEGtamEmgHx9Pgzxk-c51_RDEEcX3pf0I_5MC6HiRBRgk-L_7AnOlV4R_AE-A7xwfYtZn4LEahg8eReQr9qMCB-tOL0fPxIFVRfBgrXse9TNaE4WsbZRyeKMgieejWTB5Zy6igoCBaDS1UITrb-p9bEpFQCy-xcaB0frRCWj3DafSrXvWJqQ6GzTRhxyRcOGjPf8XRGcDaXM3UT1VjOweRBN0LoMkcQZHlw6a9O-tbTKzeu0CmkBXxWUAHzdq7h2yCYykn_W_e7fFdGuUWw5ZBNY9dyiNhJuU1MRfpv00roQSEv63lvE0zQwOMyC_QyjWV9eAZFA_hTrCdhbk7ML-RkbE-XE39fICtAJ-uoyCqacEcdK5MG6zceTLm; path=/; secure; samesite=none; Partitioned
+1 < X-Content-Type-Options: nosniff
+1 < RateLimit-Limit: HttpRequestRatePerPort:1500/m
+1 < RateLimit-Remaining: HttpRequestRatePerPort:1499
+1 < RateLimit-Reset: HttpRequestRatePerPort:45s
+1 < X-Report-Abuse: https://msrc.microsoft.com/report/abuse
+1 < x-ms-ratelimit-limit: 1500
+1 < x-ms-ratelimit-remaining: 1497
+1 < x-ms-ratelimit-used: 3
+1 < x-ms-ratelimit-reset: 0
+1 < X-Powered-By: Express
+1 < X-Robots-Tag: noindex, nofollow
+1 < Referrer-Policy: same-origin
+1 < VsSaaS-Request-Id: 87c94263-a949-4442-9c29-1bdce5a0ab26
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
+{"email":"user_1769181157617@example.com","id":8,"name":"Chelsia","surname":"Demchyk"}
+
+---------------------------------------------------------
+feature: classpath:examples/users/users_positive.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 1,4960
+---------------------------------------------------------
+
+Karate version: 1.5.0 | env: local
+======================================================
+elapsed:   6,84 | threads:    1 | thread time: 3,39 
+features:     4 | skipped:    0 | efficiency: 0,50
+scenarios:    7 | passed:     7 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0 | env: local
+file:///C:/Users/ademchyk/Desktop/Projects/api-challenge-karate/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"b010ffd0-85f1-4f0b-b366-5a35e77d0ad1",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.bookings.booking_positive</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>local</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-23 04:12:36 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:19]"><span>[1:19]</span> <span>Get the list of all bookings by userID</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:25]"><span>[2:25]</span> <span>Create new booking with valid data</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/bookings/booking_positive.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Booking</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">functional</a><a class="badge badge-primary" href="karate-tags.html">high</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">positive</a><a class="badge badge-primary" href="karate-tags.html">allTests</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:19]</span>
+                <span class="scenario-name">Get the list of all bookings by userID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>353</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">16:12:35.572 karate.env system property was: local 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def utils = call read(&#39;classpath:examples/utils/functions.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">39</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;booking&#39;, 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">287</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">16:12:35.626 request:
+1 &gt; GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking/1
+1 &gt; Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:12:35.908 response time in milliseconds: 280
+1 &lt; 200
+1 &lt; Date: Fri, 23 Jan 2026 15:12:35 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 &lt; Pragma: no-cache
+1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW1Gbj6-LqeBY6ffpKa_P5IE06l-Tl58Z-kA0F0umFJ2M-sfEFg1Wa74Vc5tpTTeiglear7jp6LLdwaDALCxVQOP16Edldrt_s1KuJS_8Id4DkaIjuV4yhd6VvYlhb2TNLB-sHtB-rnccskJ9WHH7VwaOfLoZ5lmHD_VM2IFQnFAwGEIzOyDMXLaHE-DvSb-JP5LQh1vo-YfIFPpXB-XtS4wAiqC0eC1_BEiBu57Ifnq_Tci61UMBMpEWyXpXGaOK1rd0yOwQ87aPkbThiN0UEZ377CHjFBaUkVejfCK9w9cjjmloizEQ7ZCGTd__bsMGAJ2eunYalzXmZXFqu3BYz26vwdpCmbOoPhZcw4ykoc5w5zkl4yQM9LFyO2WxVtyTGhqNen2jab7Fq6T3yxepHlIdXHkWSZ1bk4omgf4mo5Ib0K7cTk5P93YNwGKyFNaL51SoFEH47qxjQi0Kf72PQev8-KYFOzsuSuG2Gcgq8Yq11j67zzmXpUEV_bAsIzwi8jdIvauxYGVpoV1-i9-VSPv9uNhyTEw07QtJQw25pRQqwzXNhsNoh4j8zRFOYkp3V4uSVwgPVUOfWY7oNvfECuU7tpsJtpSRdzRyyF8E2BnD7b7nyV4E-6ouwDMiJNdlAHLzN4YIaAumIAGvO9IrqTmoJb7KDSF89OqsNowFvPMqvzHh4onwitYuZz2Gc7SZVPDYf-YfRTYCqC7oDGv6C6DHInxrBueTJOT0rO3WbkRWis1dqBH4kvs5JawgCNkL7Ff6Wq_wEOYgFzgYoTzNUvM6gDGnWIwXaZugcDZDTMP5IgZpXcH1Wu4kdakMdFdf8DZdqgY2BqDtAw5T7EKZ8E86jc2_trCp5-f0AoPR3OltxzY2SBh6YsiJ2bHMiHxuz1XZbbXZRhGXauHedGuT_53jXpVyL1VR4y2L6hLN3vmbHn4rf3VtTQSe3YEJN0JCY5a2J_Rs21JYMG6qW92Qo4w; path=/; secure; samesite=none; Partitioned
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; RateLimit-Limit: HttpRequestRatePerPort:1500/m
+1 &lt; RateLimit-Remaining: HttpRequestRatePerPort:1499
+1 &lt; RateLimit-Reset: HttpRequestRatePerPort:15s
+1 &lt; X-Report-Abuse: https://msrc.microsoft.com/report/abuse
+1 &lt; x-ms-ratelimit-limit: 1500
+1 &lt; x-ms-ratelimit-remaining: 1498
+1 &lt; x-ms-ratelimit-used: 2
+1 &lt; x-ms-ratelimit-reset: 0
+1 &lt; X-Powered-By: Express
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; Referrer-Policy: same-origin
+1 &lt; VsSaaS-Request-Id: 89d731e4-5588-461c-9aab-5744bd450eb6
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Served-By: tunnels-prod-rel-euw-v3-cluster
+{&quot;date&quot;:&quot;2022-02-01&quot;,&quot;destination&quot;:&quot;MAD&quot;,&quot;id&quot;:1,&quot;origin&quot;:&quot;WRO&quot;,&quot;userId&quot;:1}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { id: 1 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">functional</a><a class="badge badge-primary" href="karate-tags.html">high</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">positive</a><a class="badge badge-primary" href="karate-tags.html">allTests</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:25]</span>
+                <span class="scenario-name">Create new booking with valid data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>328</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">16:12:35.938 karate.env system property was: local 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def utils = call read(&#39;classpath:examples/utils/functions.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def today = utils.currentDate()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;booking&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { date: &quot;#(today)&quot;, destination: &quot;USA&quot;, origin: &quot;KRK&quot;, userId: 1 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">310</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">16:12:35.961 request:
+1 &gt; POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 67
+1 &gt; Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;date&quot;:&quot;2026-01-23&quot;,&quot;destination&quot;:&quot;USA&quot;,&quot;origin&quot;:&quot;KRK&quot;,&quot;userId&quot;:1}
+
+16:12:36.266 response time in milliseconds: 304
+1 &lt; 201
+1 &lt; Date: Fri, 23 Jan 2026 15:12:36 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 &lt; Pragma: no-cache
+1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW31UHvVe25XpTOp9gq2k4o0HL_-n1hBtVb8-FePOW9sUHYz4t_Om1hm0mu-PWOikJDpl2xztb-n89GTkFAwcon27jGusLiqoHvTsbCZK123DfL5PLoXg4JiSo-G8VFa1NTuFkgYJlkYpESRhk_FsKQ7fD2CjvIfODrG0Fj4Z3uY3JlirmQKjTn1S7gFXXDtxJjCoSc7jrIwP7yVYR6x0jYBPdq1wcxiLnZMOCGXUKOki5C-q4iUNjBaWqG4wqA5mrLpp87CE1foGF4ie-86tkntVOHcLdPO5OpNS8pLUJ1hrD8lDcun3Y_S8lMQKBiBcyAOj5lFyck_QGxo3jjGCAYBeKtkBJYO3diX2LB-V2k7C5ZIYVHFtI8Hig7wFOMGYJoUdynklyDJlnIfI9G7PafAR7EaoH9wtGQH7KIKGlAYWL6yvtAGfOZq-fR5bWbgiXgtHSS0SeB0iAHI0xQfzXapTz4M6qKbZH3m_EH_1ZSLZxaFwO44wM_2itXLSKiuXNmRhnNG7SZFFPd2nIx2QY9ljI29CwjHLIPYnIDcvHkQZfTT7XPN8qbmy00e9ER0nwg0IH7yetZdJyWfNUd-vIgK1pOTosR_g0kY_HFsEBol-vI3HEUc1BbuCCB5nC3NL_jJTKPKLbS3TV7w2IYTpEJ4s_S9rbFhXhU3ZaViGINN2suhmx1w7YXuGnsqNQkJuWUJ2Grr1IrrMmVW9c3vh1leCylLr9P08ruhrIqJYPXSqzWaj-ug5RACR3I9OAVm9XhSi6K9ThvqxszlB-MqObayNwWSk0RjFU5J6ZEMl-JZIN06I1rAy6X0spwWt8HFv_YDp8NtW1nVnfnVivV93QE0yMSAqrXOSiIVv2I90m2tT7kod8Cbc41UlkVTgyuX-QFOBXfF6nzoGu7FukRkDHW0fDqSJeRsYGQyprvep_oMu7-Vd_YT0a1dkOtGi_6AK3nhqrduyNtdFFVMnaKPHfOm; path=/; secure; samesite=none; Partitioned
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; RateLimit-Limit: HttpRequestRatePerPort:1500/m
+1 &lt; RateLimit-Remaining: HttpRequestRatePerPort:1499
+1 &lt; RateLimit-Reset: HttpRequestRatePerPort:20s
+1 &lt; X-Report-Abuse: https://msrc.microsoft.com/report/abuse
+1 &lt; x-ms-ratelimit-limit: 1500
+1 &lt; x-ms-ratelimit-remaining: 1497
+1 &lt; x-ms-ratelimit-used: 3
+1 &lt; x-ms-ratelimit-reset: 0
+1 &lt; X-Powered-By: Express
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; Referrer-Policy: same-origin
+1 &lt; VsSaaS-Request-Id: 29c3ca4d-33f0-40d2-b013-f4f957028846
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Served-By: tunnels-prod-rel-euw-v3-cluster
+{&quot;date&quot;:&quot;2026-01-23&quot;,&quot;destination&quot;:&quot;USA&quot;,&quot;id&quot;:14,&quot;origin&quot;:&quot;KRK&quot;,&quot;userId&quot;:1}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
