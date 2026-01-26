@@ -1,5 +1,5 @@
 
-@allTests @smoke @functional @negative
+@allTests @functional @negative
 Feature: Booking
 
   Background:
@@ -12,3 +12,23 @@ Feature: Booking
     And request { date: "2026-01-23", destination: "POL", origin: "USA", userId: 999}
     When method post
     Then status 404
+
+
+    Scenario: Create booking fails when destination is not correct formatting
+      Given path 'booking'
+      And request
+        """
+        {
+          "date": "2026-01-26",
+          "destination": "Krakow",
+          "origin": "Ukraine",
+          "userId": 1
+        }
+        """
+      When method post
+      Then status 400
+
+      Scenario: Get booking by id with non-numeric id
+        Given path 'booking', "ABC"
+        When method get
+        Then status 400

@@ -1,5 +1,5 @@
 
-@allTests @smoke @positive @functional @high
+@allTests @positive @functional
 Feature: Booking
 
   Background:
@@ -7,21 +7,25 @@ Feature: Booking
     * url baseUrl
     * def utils = call read('classpath:examples/utils/functions.js')
 
+    @smoke
+  Scenario: Get the list of all bookings by userId and date
+    Given path 'booking'
+    And param userId = 1
+    And param date = '2026-01-26'
+    When method get
+    Then status 200
+    And match response == '#[]'
 
-#  Scenario: Get the list of all bookings
-#    Given path 'booking'
-#    When method get
-#    Then status 200
-#    And match response == '#[]'
 
 
-
+  @smoke @high
   Scenario: Get the list of all bookings by userID
     Given path 'booking', 1
     When method get
     Then status 200
     And match response contains { id: 1 }
 
+    @smoke
   Scenario: Create new booking with valid data
     * def today = utils.currentDate()
     Given path 'booking'
