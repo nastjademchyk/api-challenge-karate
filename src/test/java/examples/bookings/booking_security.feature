@@ -1,5 +1,5 @@
 @allTests @security
-Feature: Booking Security
+Feature: Booking Security Tests
 
   Background:
     * configure ssl = true

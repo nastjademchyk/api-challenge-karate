@@ -1,6 +1,6 @@
 
 @allTests @positive
-Feature: Users
+Feature: Users Positive Tests
 
   Background:
     * configure ssl = true
@@ -15,22 +15,20 @@ Feature: Users
     And match response == '#[]'
 
   @smoke
-  Scenario: Get the user by Id
+  Scenario: Get user data by Id
     Given path 'user', 1
     When method get
     Then status 200
-    And match response contains { id: 1 }
-    And match response.name == 'John'
+    And match response == { id: 1, name: 'John', surname: 'Doe', email: 'john.doe@wherever.com' }
 
-
-  Scenario: Create new user with valid email address
+  Scenario: Create new user with dynamically generated valid email
     * def email = utils.randomEmail()
     Given path 'user'
     And request { email: '#(email)', name: 'Chelsia', surname: 'Demchyk' }
     When method post
     Then status 201
 
-  Scenario: Accept header
+  Scenario: Create user with explicit Accept and Content-Type headers
     * def email = utils.randomEmail()
     Given path 'user'
     And header Accept = 'application/json'
@@ -46,7 +44,7 @@ Feature: Users
     When method post
     Then status 201
 
-    Scenario: Get user by Id and it returns correct schema
+    Scenario: Verify user response schema structure is correct
       Given path 'user', 1
       When method get
       Then status 200

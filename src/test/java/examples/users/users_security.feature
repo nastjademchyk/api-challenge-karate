@@ -1,6 +1,6 @@
 @allTests @security
 
-Feature: User Security
+Feature: User Security Tests
 
   Background:
     * configure ssl = true
@@ -36,7 +36,7 @@ Feature: User Security
       When method post
       Then status 413
 
-    Scenario: User list must not expose sensetive information: token, apiKey, sessionId, password
+    Scenario: User list must not expose sensitive information: token, apiKey, sessionId, password
       Given path 'user'
       When method get
       Then status 200

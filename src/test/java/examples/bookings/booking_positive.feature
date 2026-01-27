@@ -1,13 +1,22 @@
 
 @allTests @positive @functional
-Feature: Booking
+Feature: Booking Positive Tests
 
   Background:
     * configure ssl = true
     * url baseUrl
     * def utils = call read('classpath:examples/utils/functions.js')
 
-    @smoke
+  @smoke
+  Scenario: Create new booking with valid data (date, destination, origin, userId)
+    * def today = utils.currentDate()
+    Given path 'booking'
+    And request { date: "#(today)", destination: "USA", origin: "KRK", userId: 1 }
+    When method post
+    Then status 201
+
+
+  @smoke
   Scenario: Get the list of all bookings by userId and date
     Given path 'booking'
     And param userId = 1
@@ -19,18 +28,11 @@ Feature: Booking
 
 
   @smoke @high
-  Scenario: Get the list of all bookings by userID
+  Scenario: Get booking details by booking id
     Given path 'booking', 1
     When method get
     Then status 200
-    And match response contains { id: 1 }
+    And match response.id == 1
 
-    @smoke
-  Scenario: Create new booking with valid data
-    * def today = utils.currentDate()
-    Given path 'booking'
-    And request { date: "#(today)", destination: "USA", origin: "KRK", userId: 1 }
-    When method post
-    Then status 201
 
 
