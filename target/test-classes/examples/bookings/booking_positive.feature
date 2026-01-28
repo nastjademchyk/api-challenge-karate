@@ -1,5 +1,5 @@
 
-@allTests @positive @functional
+@allTests @positive
 Feature: Booking Positive Tests
 
   Background:
@@ -7,7 +7,7 @@ Feature: Booking Positive Tests
     * url baseUrl
     * def utils = call read('classpath:examples/utils/functions.js')
 
-
+@functional @medium
   Scenario Outline: Create booking with various valid IATA-like codes
     * def today = utils.currentDate()
     Given path 'booking'

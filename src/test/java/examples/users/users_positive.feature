@@ -7,7 +7,7 @@ Feature: Users Positive Tests
     * url baseUrl
     * def utils = call read('classpath:examples/utils/functions.js')
 
-
+  @functional @medium
   Scenario: Create new user with dynamically generated valid email
     * def email = utils.randomEmail()
     Given path 'user'
@@ -15,7 +15,7 @@ Feature: Users Positive Tests
     When method post
     Then status 201
 
-
+  @functional @medium
   Scenario: Create user with explicit Accept and Content-Type headers
     * def email = utils.randomEmail()
     Given path 'user'
@@ -32,6 +32,8 @@ Feature: Users Positive Tests
     When method post
     Then status 201
 
+
+  @functional @medium
     Scenario: Verify user response schema structure is correct
       Given path 'user', 1
       When method get

@@ -6,7 +6,7 @@ Feature: Booking Security Tests
     * url baseUrl
     * def utils = call read('classpath:examples/utils/functions.js')
 
-
+@medium
   Scenario Outline: Booking endpoint rejects unsupported HTTP methods
     Given path 'booking'
     When method <method>
@@ -18,7 +18,7 @@ Examples:
   | put    |
   | patch  |
 
-
+@medium
   Scenario: Create booking with invalid Content-Type
     Given path 'booking'
     And header Content-Type = 'text/plain'
@@ -26,7 +26,7 @@ Examples:
     When method post
     Then status 400
 
-
+@high
   Scenario:  Security headers validation for booking detail endpoint by Id
     Given path 'booking', 1
     When method get
@@ -38,7 +38,7 @@ Examples:
       And match header referrer-policy == 'same-origin'
       And match header x-robots-tag == 'noindex, nofollow'
 
-
+@medium
   Scenario: Reject unknown fields in create booking
     Given path 'booking'
     And header Content-Type = 'application/json'

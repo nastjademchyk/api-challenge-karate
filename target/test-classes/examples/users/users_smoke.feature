@@ -6,14 +6,14 @@ Feature: Users Positive Tests
     * url baseUrl
 
 
-
+@high
   Scenario: Get all users
     Given path 'user'
     When method get
     Then status 200
     And match response == '#[]'
 
-
+@high
   Scenario: Get user data by Id
     Given path 'user', 1
     When method get

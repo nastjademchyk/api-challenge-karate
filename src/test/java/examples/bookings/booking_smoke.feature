@@ -7,7 +7,7 @@ Feature: Booking Positive Tests
     * url baseUrl
     * def utils = call read('classpath:examples/utils/functions.js')
 
-
+@high
   Scenario: Create new booking with valid data (date, destination, origin, userId)
     * def today = utils.currentDate()
     Given path 'booking'
@@ -16,7 +16,7 @@ Feature: Booking Positive Tests
     Then status 201
 
 
-
+  @high
   Scenario: Get the list of all bookings by userId and date
     Given path 'booking'
     And param userId = 1
@@ -27,7 +27,7 @@ Feature: Booking Positive Tests
 
 
 
-
+  @high
   Scenario: Get booking details by booking id
     Given path 'booking', 1
     When method get

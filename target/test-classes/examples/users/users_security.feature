@@ -7,6 +7,7 @@ Feature: User Security Tests
     * url baseUrl
     * def utils = call read('classpath:examples/utils/functions.js')
 
+  @medium
   Scenario Outline: Users endpoint rejects unsupported HTTP methods
     Given path 'user'
     When method <method>
@@ -18,7 +19,7 @@ Feature: User Security Tests
       | put    |
       | patch  |
 
-
+@medium
   Scenario: User endpoint rejects invalid Content-Type
     Given path 'user'
     And header Content-Type = 'text/plain'
@@ -26,7 +27,7 @@ Feature: User Security Tests
     When method post
     Then status 400
 
-
+@medium
     Scenario: API safely rejects large payload by creating a new user
       * def large = 'X'.repeat(1000000)
       * def email = utils.randomEmail()
@@ -36,6 +37,7 @@ Feature: User Security Tests
       When method post
       Then status 413
 
+  @high
     Scenario: User list must not expose sensitive information: token, apiKey, sessionId, password
       Given path 'user'
       When method get
