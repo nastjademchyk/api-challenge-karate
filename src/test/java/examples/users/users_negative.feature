@@ -5,7 +5,6 @@ Background:
   * configure ssl = true
   * url baseUrl
   * def utils = call read('classpath:examples/utils/functions.js')
-  * def payload = read('classpath:examples/users/payloads/create-user-template.json')
 
   @high
   Scenario: Cannot create user without email

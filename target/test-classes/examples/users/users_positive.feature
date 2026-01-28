@@ -34,7 +34,7 @@ Feature: Users Positive Tests
 
   @functional @medium
     Scenario: Verify user response schema structure is correct
-    * def schema = read('classpath:examples/users/payloads/user-response-schema.json')
+    * def schema = read('classpath:examples/users/schemas/user-response-schema.json')
       Given path 'user', 1
       When method get
       Then status 200

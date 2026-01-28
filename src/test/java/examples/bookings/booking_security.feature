@@ -40,17 +40,9 @@ Examples:
 
 @medium
   Scenario: Reject unknown fields in create booking
+  * def payload = read('classpath:examples/bookings/payloads/booking-unknown-field.json')
     Given path 'booking'
     And header Content-Type = 'application/json'
-    And request
-      """
-      {
-        "date": "2026-01-26",
-        "destination": "LWO",
-        "origin": "KRK",
-        "name": "Max",
-        "iserId": "1"
-      }
-      """
+    And request payload
     When method post
     Then status 400

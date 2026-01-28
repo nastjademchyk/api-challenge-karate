@@ -35,60 +35,48 @@ Feature: Booking Negative Tests
       Then status 400
 @high
   Scenario: Reject booking creation when origin or destination is provided in lower case
+  * def date = utils.currentDate()
+  * def destination = "krk"
+  * def origin = "usa"
+  * def userId = 1
+  * def payload = read('classpath:examples/bookings/payloads/create-booking-template.json')
     Given path 'booking'
-    And request
-        """
-        {
-          "date": "2026-01-26",
-          "destination": "krk",
-          "origin": "usa",
-          "userId": 1
-        }
-        """
+    And request payload
     When method post
     Then status 400
 
 @high
   Scenario: Reject booking creation when origin or destination length is less than 3 characters
+  * def date = utils.currentDate()
+  * def destination = "KR"
+  * def origin = "PR"
+  * def userId = 1
+  * def payload = read('classpath:examples/bookings/payloads/create-booking-template.json')
     Given path 'booking'
-    And request
-        """
-        {
-          "date": "2026-01-26",
-          "destination": "KR",
-          "origin": "PR",
-          "userId": 1
-        }
-        """
+    And request payload
     When method post
     Then status 400
 
   @heigh
   Scenario: Reject booking creation when userId is string
+    * def date = utils.currentDate()
+    * def destination = "KRA"
+    * def origin = "USA"
+    * def userId =  "one"
+    * def payload = read('classpath:examples/bookings/payloads/create-booking-template.json')
     Given path 'booking'
-    And request
-        """
-        {
-          "date": "2026-01-26",
-          "destination": "KRA",
-          "origin": "USA",
-          "userId": "one"
-        }
-        """
+    And request payload
     When method post
     Then status 400
 
 @high
   Scenario: Reject booking creation without origin field
+  * def date = utils.currentDate()
+  * def destination = "KRA"
+  * def userId =  "one"
+  * def payload = read('classpath:examples/bookings/payloads/create-booking-template.json')
     Given path 'booking'
-    And request
-        """
-        {
-          "date": "2026-01-26",
-          "destination": "KRA",
-          "userId": 1
-        }
-        """
+    And request payload
     When method post
     Then status 400
 

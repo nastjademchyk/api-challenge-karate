@@ -6,7 +6,7 @@ Feature: User Security Tests
     * configure ssl = true
     * url baseUrl
     * def utils = call read('classpath:examples/utils/functions.js')
-    * def schema = read('classpath:examples/users/payloads/user-response-schema.json')
+    * def schema = read('classpath:examples/users/schemas/user-response-schema.json')
 
   @medium
   Scenario Outline: Users endpoint rejects unsupported HTTP methods
