@@ -5,6 +5,7 @@ Feature: Booking Negative Tests
   Background:
     * configure ssl = true
     * url baseUrl
+    * def utils = call read('classpath:examples/utils/functions.js')
 
 
 @high
@@ -21,18 +22,15 @@ Feature: Booking Negative Tests
     When method post
     Then status 400
 
-@high
+@high @new
   Scenario: Reject booking creation when origin or destination is provided as full city names instead of 3‑letter airport codes
+  * def date = utils.currentDate()
+  * def destination = "Krakow"
+  * def origin = "Ukraine"
+  * def userId = 1
+  * def payload = read('classpath:examples/bookings/payloads/create-booking-template.json')
       Given path 'booking'
-      And request
-        """
-        {
-          "date": "2026-01-26",
-          "destination": "Krakow",
-          "origin": "Ukraine",
-          "userId": 1
-        }
-        """
+      And request payload
       When method post
       Then status 400
 @high

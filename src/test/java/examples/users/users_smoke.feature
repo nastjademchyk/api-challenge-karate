@@ -4,7 +4,7 @@ Feature: Users Positive Tests
   Background:
     * configure ssl = true
     * url baseUrl
-
+    * def utils = call read('classpath:examples/utils/functions.js')
 
 @high
   Scenario: Get all users

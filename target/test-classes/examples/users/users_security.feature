@@ -6,6 +6,7 @@ Feature: User Security Tests
     * configure ssl = true
     * url baseUrl
     * def utils = call read('classpath:examples/utils/functions.js')
+    * def schema = read('classpath:examples/users/payloads/user-response-schema.json')
 
   @medium
   Scenario Outline: Users endpoint rejects unsupported HTTP methods
@@ -31,9 +32,13 @@ Feature: User Security Tests
     Scenario: API safely rejects large payload by creating a new user
       * def large = 'X'.repeat(1000000)
       * def email = utils.randomEmail()
+      * def name = large
+      * def surname = 'Demchyk'
+      * def payload = read('classpath:examples/users/payloads/create-user-template.json')
+
       Given path 'user'
       And header Content-Type = 'application/json'
-      And request { email: '#(email)', name: '#(large)', surname: 'Demchyk' }
+      And request payload
       When method post
       Then status 413
 
