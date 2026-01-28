@@ -1,6 +1,6 @@
 
 @allTests @functional @negative
-Feature: Booking Negative Test
+Feature: Booking Negative Tests
 
   Background:
     * configure ssl = true
@@ -126,8 +126,6 @@ Feature: Booking Negative Test
     Given path 'booking', 9999
     When method get
     Then status 404
-
-
 
 
 

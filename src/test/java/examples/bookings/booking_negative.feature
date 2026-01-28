@@ -129,8 +129,6 @@ Feature: Booking Negative Tests
 
 
 
-
-
   Scenario: Reject providing bookings without userId
     Given path 'booking'
     And request { date: "2026-01-27"}
