@@ -16,7 +16,7 @@ Feature: Users Positive Tests
     Then status 201
 
 
-  @high @new
+  @high
   Scenario: Get all users
     Given path 'user'
     When method get
@@ -29,5 +29,5 @@ Feature: Users Positive Tests
     Given path 'user', 1
     When method get
     Then status 200
-    And match response == { id: 1, name: 'John', surname: 'Doe', email: 'john.doe@wherever.com' }
+    And match response == expected
 

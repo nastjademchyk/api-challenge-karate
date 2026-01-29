@@ -26,7 +26,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 });
 </script>
 
-    <title>examples.bookings.booking_smoke</title>
+    <title>examples.users.users_smoke</title>
   </head>
   <body>
     <div id="root-container">
@@ -49,19 +49,19 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-01-29 02:38:47 PM</div>
+    <div>2026-01-29 02:38:51 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:11]"><span>[1:11]</span> <span>Create new booking with valid data (date, destination, origin, userId)</span></a>
+            <a href="#[1:11]"><span>[1:11]</span> <span>Create new user with valid data</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[2:20]"><span>[2:20]</span> <span>Get the list of all bookings by userId and date</span></a>
+            <a href="#[2:20]"><span>[2:20]</span> <span>Get all users</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[3:31]"><span>[3:31]</span> <span>Get booking details by booking id</span></a>
+            <a href="#[3:27]"><span>[3:27]</span> <span>Get user data by Id</span></a>
           </div>
         </div>
       </div>
@@ -70,8 +70,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
-          <span class="feature-path">examples/bookings/booking_smoke.feature</span><span class="feature-label">|</span>
-          <span class="feature-name">Booking Positive Tests</span>
+          <span class="feature-path">examples/users/users_smoke.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Users Positive Tests</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
@@ -82,12 +82,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[1:11]</span>
-                <span class="scenario-name">Create new booking with valid data (date, destination, origin, userId)</span>
+                <span class="scenario-name">Create new user with valid data</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>128</span>
+              <span>ms:</span>&nbsp;<span>220</span>
             </div>
           </div>
           <div class="step-row">
@@ -103,8 +103,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>configure ssl = true</span>
@@ -119,7 +119,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">14:38:46.655 karate.env system property was: local 
+  <div class="preformatted" data-parent="0.5">14:38:51.301 karate.env system property was: local 
 </div>   
 
   
@@ -132,8 +132,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
@@ -160,14 +160,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.8">
-      <div class="step-ref bg-step">8</div>
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def utils = call read(&#39;classpath:examples/utils/functions.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -192,10 +192,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">12</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def payload = read(&#39;classpath:examples/bookings/payloads/create-booking-valid.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def payload = read(&#39;classpath:examples/users/payloads/create-user-valid.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -220,7 +220,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">13</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;booking&#39;</span>
+        <span>Given</span>&nbsp;<span>path &#39;user&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -279,7 +279,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">120</div>
+    <div class="time-cell passed">212</div>
   </div>
 
    
@@ -288,44 +288,44 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.15">14:38:46.663 request:
-1 &gt; POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
+  <div class="preformatted" data-parent="0.15">14:38:51.320 request:
+1 &gt; POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 67
+1 &gt; Content-Length: 78
 1 &gt; Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2026-01-29&quot;,&quot;destination&quot;:&quot;USA&quot;,&quot;origin&quot;:&quot;KRK&quot;,&quot;userId&quot;:1}
+{&quot;email&quot;:&quot;user_1769693931318@example.com&quot;,&quot;name&quot;:&quot;Nastja&quot;,&quot;surname&quot;:&quot;Demchyk&quot;}
 
-14:38:46.771 response time in milliseconds: 108
+14:38:51.523 response time in milliseconds: 203
 1 &lt; 201
-1 &lt; Date: Thu, 29 Jan 2026 13:38:47 GMT
+1 &lt; Date: Thu, 29 Jan 2026 13:38:51 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Cache-Control: no-cache,no-store
 1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
 1 &lt; Pragma: no-cache
-1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW2EXnhiPoPwEvBE8XpDv0x62UWbroD5BdJttiXykDLms0lcAnjNE_uZGnpLsPkSjaXM6QhVtlMdZUdFyruglyyti7hpC8DWiHyahB9A640yag_BKujoP5RRBZWi9APvFj9H63scAB4oz5rZuMmbpdCgn9fKUfiW7JXeI6mATWzKwxuM1KWAl3GAwsITy9r3KIBJmE9wtM5HtAsMrB3-Km9y4k-yojQUnbZ6ADdmi6DIr2MlRYYqd4Lys51Sg3fXQAlImCbadc4R6jy3IrbsOUtZTJN-RqE7i-P_xd9ltYFc8KysWK0lA2PUcBTI6wFMmm0tIO-w-w96f8qZSD1TbwyYXUMHQzlRct5tCU_g-F1BZgGw7vcVtL_BgPchOf_q2uQp_rRWQeqj2WuQCr9NiBnXNwB-lssRhyhxfKpZwFC4EShGhPFFSPhRnp0fIRD8wQR-t8X-32-E9xdTyKl1Gvo287llZB0RwlysZkGAIhBNtUErBKYkWS008jN-4fiiA7YUPg_oCd2stIboLXJ7jJvtdta62RqxVIlAdqNXGWZC0SrMVTQOvICTDMl899pPb3eZQdjYHLWswjeSIkEsa-k3phA9CFkEW3s_Y4U8HjFwuDq9KMTtEh0mWIkFLcPaiS4gCNMg44u6BLGqfYac75ec-KuNjb04oLSUtDMX8l6s6WcEs6rZW64CH5GK88pc-5fb2dN5U5v6kBskUIwOX_JbKO2ykAlGSWDYnROm8FHbtpA6sWR3Z2Bl7oqGIOXs9KToyaAC7ZpyNeCnd3pQcefrX11i9Rx7xWYnKfntUqFPIhaL8i92AuVe6NWVldrUr0s4DjxJ0d1MDLLUJyBQyD9OrRQ3SPrHgkTciDhkrplsMaPY7prPQnHQPPds7EvAmGIQ-biwQ9Hy_k9At3WIB528F4a4Qlx_DE-YnitpD0xQ1c_QQmPvZTqJAZcV75hgCcb-gz26M5_wHaWcZDH_AEKG; path=/; secure; samesite=none; Partitioned
+1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW1fkT14AICf9guYbzqIRs50lRfiOLyXe6UWinoKDoBMa6pY_e66e3hOf0crjMAOrPHtrdK9sieLMqSjOjYnP4Qbf8o2p06kpDqD5sm60cMg_Hxd0jBVXbI8cV0fsRZMmQHhaBXW3tHeRPy8CFeagxRJCEfCbGEcBI8u0KYuL-AlWOIxT1XANaPkIRvPbPp57nhzGEmMjZ1M6g_TCiietgmmTz7cvZ8sEays2JYRDFPX8rKUzDS82g-P0XCOYKoPRnJfiReNarnXs_ekozZ12gcEmcMtph32k5raMMnG-Vv79r0YxnPFSIq63ZeK3Fs_PGsoYeMepLzwwMn3zxJ3s9E46dHWORMib5Ayoh9ozdHGqx95YGSDdfpcMex6U6lECaTICPBszZK-t54IdDMYGfxxcNFhRgNYUUkGUJwhxGaTBPW5IPJkdo3zk3tocdE1Y4RKqlAAThSCVGKoLJVduHj3xl5zlfcdtPhh9r6uPnQyydOV0w_Z07GesktHz2xHoEjdyGjY5TcAyxG5rsTSoumAux3jqHABbxAI4g3hVBtm0n7k1jXNXk7ZLiF1-J36IKnfhtUl53f7ipcAkx7rNTsRMY8gLMrV0jRKOkhZPv9GVuHYiuXtPtgmIVcv5dVW5wm4XcfYNfQtqCIQKuJi03JsFvWN1ih3HL5jN3dqJHike3uqvtOLVt1L8buyyeATPFk4TZFe0dA6x6tAbv_q7mAS4lHhRlC88qgiZOk9w8pQL6hiAooWy3p-KEOyBeN1jxUbzY-751t4T_JMHO0n8g6rJVe5OMbw4crxOP8kwepNzMIVafxTzC3qYMQ87hKOM-N3lrEQR5OP3sLnpJOwLJQfk85p14eX2jN6tpKQk6dZhVfw_giMM6psPb8bxUTNVYyQZ3lgPfSK_1vVngbvBXMsij7FUUeHlxwDhMybiLDoxCxG_5nTI9BypbxV-ak7Hd8u4kPCBo-heGrCoElqW21y; path=/; secure; samesite=none; Partitioned
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; RateLimit-Limit: HttpRequestRatePerPort:1500/m
 1 &lt; RateLimit-Limit: ClientConnectionsPerPort: max 1000
 1 &lt; RateLimit-Remaining: HttpRequestRatePerPort:1496
-1 &lt; RateLimit-Remaining: ClientConnectionsPerPort:999
-1 &lt; RateLimit-Reset: HttpRequestRatePerPort:23s
+1 &lt; RateLimit-Remaining: ClientConnectionsPerPort:998
+1 &lt; RateLimit-Reset: HttpRequestRatePerPort:42s
 1 &lt; X-Report-Abuse: https://msrc.microsoft.com/report/abuse
 1 &lt; x-ms-ratelimit-limit: 1500
-1 &lt; x-ms-ratelimit-remaining: 1499
-1 &lt; x-ms-ratelimit-used: 1
+1 &lt; x-ms-ratelimit-remaining: 1495
+1 &lt; x-ms-ratelimit-used: 5
 1 &lt; x-ms-ratelimit-reset: 0
 1 &lt; X-Powered-By: Express
 1 &lt; X-Robots-Tag: noindex, nofollow
 1 &lt; Referrer-Policy: same-origin
-1 &lt; VsSaaS-Request-Id: 9f418cce-bba3-40d9-bea0-cecfa9936e19
+1 &lt; VsSaaS-Request-Id: 145f8e9b-8769-4f94-8b9f-a5c8bd674b97
 1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
 1 &lt; X-Served-By: tunnels-prod-rel-euw-v3-cluster
-{&quot;date&quot;:&quot;2026-01-29&quot;,&quot;destination&quot;:&quot;USA&quot;,&quot;id&quot;:5,&quot;origin&quot;:&quot;KRK&quot;,&quot;userId&quot;:1}
+{&quot;email&quot;:&quot;user_1769693931318@example.com&quot;,&quot;id&quot;:5,&quot;name&quot;:&quot;Nastja&quot;,&quot;surname&quot;:&quot;Demchyk&quot;}
 
 </div>   
 
@@ -370,12 +370,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[2:20]</span>
-                <span class="scenario-name">Get the list of all bookings by userId and date</span>
+                <span class="scenario-name">Get all users</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>258</span>
+              <span>ms:</span>&nbsp;<span>153</span>
             </div>
           </div>
           <div class="step-row">
@@ -391,8 +391,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>configure ssl = true</span>
@@ -407,7 +407,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">14:38:46.787 karate.env system property was: local 
+  <div class="preformatted" data-parent="0.5">14:38:51.523 karate.env system property was: local 
 </div>   
 
   
@@ -420,8 +420,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
@@ -448,8 +448,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.8">
-      <div class="step-ref bg-step">8</div>
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def utils = call read(&#39;classpath:examples/utils/functions.js&#39;)</span>
@@ -480,7 +480,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">21</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;booking&#39;</span>
+        <span>Given</span>&nbsp;<span>path &#39;user&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -508,10 +508,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">22</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>param userId = 1</span>
+        <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">151</div>
   </div>
 
    
@@ -520,7 +520,44 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.22">14:38:51.540 request:
+1 &gt; GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
+1 &gt; Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:38:51.687 response time in milliseconds: 147
+1 &lt; 200
+1 &lt; Date: Thu, 29 Jan 2026 13:38:52 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache,no-store
+1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 &lt; Pragma: no-cache
+1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW3sXMyKIZ114JB6sFXjb_42e8NMpe48-Ow_e0AIvSbfQ5293lqyYzkDWCibf6AUnSpdkEXZiP3SizIcY9ZXF1HfzfI5DARQnktTxlAXt-e8E7pEcukGwS2pElWfuZP6t9BItgaaBlNnNVO-3JDGRFap72i0W96goHba3d0EOQNG5f_sVBZ8dHsekUqcPU9ExA3KsMW-6q7qXrONC105o6gxiM4ucpmADacid61ssrFt7zrgDWYBTo0Qwr_4i8LzbZNgh5iBmyvhpi5cbvi_5UGE2ZUDFrQ__UP53XNaH9O05xNYG6lz8GWZHFCdL1xbOnjcH7XDqmZoZ2OdESbIL1QTFiZfx1vMFDsDJG2rEeP2UTp_3_TV28zyF53R30qssdOuyQbzFjRK21WGpZk4wcw9tLlpTRccEhu1Wes-nItrvF4bakk8iAXy7qjSQPEPGPfyKcoyj1p0Qf4Nk2a0KbjLdXkSb-O--1wqicTVD3U9WSPDaKlYDYpWgXbXc4gcvHSanGGG3sa8kpxPSF_c7LePa3W7QfulJmby_VzgfD-FOYYHtN_Ua1vyFMUktSyGQZcnM3L7Uh7XUYVVOS6XUwqaABVkVeZmcvFvpn4w7TPs07FKg1bXFn3tQvJTiNZ54CkIEyS1jCf07PoZNnROoZgd3kl50Gls5Zo6SGtTGLqCyGPkHIuG0cXfejUfmt2Yoh_GpzbLdvAzFRrJZtyhffvWFdmAufI1DqzeNbAZe9D5Et20vA2nT_3Z20vKkJs3YvUHG9QVEnAnHOkXDzY3P31X_BzEvZLOAcRr8_ViR2tvDQIqMBGgVLTYqS4MGmFp3Vij2rWeNEDwg36JSFNvfxK7nhGEmwp6ov7CDwsrZbClcMYkyEVs-AN8zyXkTeV4ogCaH0YOr9JHmvS7tcZScL2Q_goA1js3w6AVhJZQHlGQ057SUilNDHq9fTapUKtP_ARWd2ZcVfnZluW2JJOkOE4b; path=/; secure; samesite=none; Partitioned
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; RateLimit-Limit: HttpRequestRatePerPort:1500/m
+1 &lt; RateLimit-Limit: ClientConnectionsPerPort: max 1000
+1 &lt; RateLimit-Remaining: HttpRequestRatePerPort:1494
+1 &lt; RateLimit-Remaining: ClientConnectionsPerPort:999
+1 &lt; RateLimit-Reset: HttpRequestRatePerPort:11s
+1 &lt; X-Report-Abuse: https://msrc.microsoft.com/report/abuse
+1 &lt; x-ms-ratelimit-limit: 1500
+1 &lt; x-ms-ratelimit-remaining: 1494
+1 &lt; x-ms-ratelimit-used: 6
+1 &lt; x-ms-ratelimit-reset: 0
+1 &lt; X-Powered-By: Express
+1 &lt; X-Robots-Tag: noindex, nofollow
+1 &lt; Referrer-Policy: same-origin
+1 &lt; VsSaaS-Request-Id: 8e71ecd8-08ff-44b8-9382-a2453e9227c8
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; X-Served-By: tunnels-prod-rel-euw-v3-cluster
+[{&quot;email&quot;:&quot;john.doe@wherever.com&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;John&quot;,&quot;surname&quot;:&quot;Doe&quot;},{&quot;email&quot;:&quot;jane.doe@somewhere.com&quot;,&quot;id&quot;:2,&quot;name&quot;:&quot;Jane&quot;,&quot;surname&quot;:&quot;Doe&quot;},{&quot;email&quot;:&quot;user_1769693928250@example.com&quot;,&quot;id&quot;:3,&quot;name&quot;:&quot;Nastja&quot;,&quot;surname&quot;:&quot;Demchyk&quot;},{&quot;email&quot;:&quot;user_1769693929074@example.com&quot;,&quot;id&quot;:4,&quot;name&quot;:&quot;#(name)&quot;,&quot;surname&quot;:&quot;#(surname)&quot;},{&quot;email&quot;:&quot;user_1769693931318@example.com&quot;,&quot;id&quot;:5,&quot;name&quot;:&quot;Nastja&quot;,&quot;surname&quot;:&quot;Demchyk&quot;}]
+
+</div>   
 
   
 
@@ -536,7 +573,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">23</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>param date = &#39;2026-01-26&#39;</span>
+        <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -564,70 +601,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">24</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method get</span>
-      </div>
-    </div>
-    <div class="time-cell passed">254</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.24">14:38:46.787 request:
-1 &gt; GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking?userId=1&amp;date=2026-01-26
-1 &gt; Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-14:38:47.042 response time in milliseconds: 255
-1 &lt; 200
-1 &lt; Date: Thu, 29 Jan 2026 13:38:47 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; Cache-Control: no-cache,no-store
-1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
-1 &lt; Pragma: no-cache
-1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW0seFxgl9j6qaUhCVbnHSChSPeWRACYwAAQL0un_wgDnwUTbsLfteLwPpNdN1K4N5wM8mpLZgPgmG4SeVDxRS0G1S-ixPnE5w7rF6vRtWS9uAVWWD0nf33FsziUuOV8UoBS8gIb4Zkk6GxUIr2bBR1qB6RKH8nvKfnLyC_IzYiYoIyz683bH45Z_qeJ5tHcnu-hPvFShQQxc0BGnJbk9WGZEZAijfacbh3Pg9w0Alv7wmqu2vBJaqwPUPHYASW4HzdrQv7mS3vuHrey6OfsbjfGOOyT9ltDseYRGRJcPRu4mk-aDqblDlEO57UiqD4dyz_89diOPPXM-HwGGisMidvvU7Vbw8GTHAkOZPMnTamt9fxQp3uw7kjGqDkuEFhZqWZuDgrlP1bJUfJgbQ9Quoa4alLQZaspaV-5Bd-UnOeRM5vEf7FeIFzCRqXFiNtKaR3OvVuOhu-zGOi1XwZX5nh3RftdsofvUiOyfw3TFuImkJUjsTcUqc3WpC-osrRwdJDexaoGT_yv8Md4n1K3uN-HJFjnRhiaLJpEUyOQ0ogRoqUiaaB9iTzCVTMaMM3F-vD7q8rotZI0ZeLk2l4oTMLm0l7JaJdW_WUxcLDLpzvNwp-J5qCoIydBVwBMCmdmOM2CwqJqLGsyPLglBEvFaXjP0HlcyxAlLwWFqyU94eN3T4QIfS6VxzDC37xM-JUjYvypN3FxXBXLUt7QPufJMAdNFoZYonp2aDM2wlzzfHmE64BIrTFPGrRm6F-IEsW_O7RGn5TtwpOVTDPFi5WHmsSP8VwX3MrMZksKqa78KI3UDow_QgEf_lkxui2VAiS_bTAXjMj8DC0tqSvzbMbXnfWfggSy0ECISU4Fy60B0urgT-ivU3wa3aNdUvs_Bsckfs17PUSnfcM4LmDfG2ZV7AEmWKN3grNv6WsvOHUggxrsswTusmdfubVf0xhSA9OypIQ7Sx8HxsnvLL-N3m6abg2R; path=/; secure; samesite=none; Partitioned
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; RateLimit-Limit: HttpRequestRatePerPort:1500/m
-1 &lt; RateLimit-Remaining: HttpRequestRatePerPort:1499
-1 &lt; RateLimit-Reset: HttpRequestRatePerPort:41s
-1 &lt; X-Report-Abuse: https://msrc.microsoft.com/report/abuse
-1 &lt; x-ms-ratelimit-limit: 1500
-1 &lt; x-ms-ratelimit-remaining: 1499
-1 &lt; x-ms-ratelimit-used: 1
-1 &lt; x-ms-ratelimit-reset: 0
-1 &lt; X-Powered-By: Express
-1 &lt; X-Robots-Tag: noindex, nofollow
-1 &lt; Referrer-Policy: same-origin
-1 &lt; VsSaaS-Request-Id: 27e14e5b-e17c-43c6-b22f-605c4c2f0982
-1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
-1 &lt; X-Served-By: tunnels-prod-rel-euw-v3-cluster
-[]
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.25">
-      <div class="step-ref passed">25</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>And</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -645,66 +619,38 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.26">
-      <div class="step-ref passed">26</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response == &#39;#[]&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[3:31]">
+          <div class="scenario-heading" id="[3:27]">
             <div class="heading-container">
               <div class="scenario-tags">
                 <a class="badge badge-primary" href="karate-tags.html">high</a><a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">allTests</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[3:31]</span>
-                <span class="scenario-name">Get booking details by booking id</span>
+                Scenario: <span>[3:27]</span>
+                <span class="scenario-name">Get user data by Id</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>131</span>
+              <span>ms:</span>&nbsp;<span>149</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[3:31]bg">
+            <div class="step-container" id="[3:27]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[3:31]bg"><div>
+          <div data-parent="[3:27]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>configure ssl = true</span>
@@ -719,21 +665,21 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">14:38:47.042 karate.env system property was: local 
+  <div class="preformatted" data-parent="0.5">14:38:51.687 karate.env system property was: local 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[3:31]bg"><div>
+          <div data-parent="[3:27]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
@@ -754,14 +700,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[3:31]bg"><div>
+          <div data-parent="[3:27]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.8">
-      <div class="step-ref bg-step">8</div>
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def utils = call read(&#39;classpath:examples/utils/functions.js&#39;)</span>
@@ -788,11 +734,39 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.32">
-      <div class="step-ref passed">32</div>
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;booking&#39;, 1</span>
+        <span>*</span>&nbsp;<span>def expected = read(&#39;classpath:examples/users/payloads/expected-user.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;user&#39;, 1</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -816,14 +790,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.33">
-      <div class="step-ref passed">33</div>
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">127</div>
+    <div class="time-cell passed">145</div>
   </div>
 
    
@@ -832,42 +806,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.33">14:38:47.056 request:
-1 &gt; GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking/1
+  <div class="preformatted" data-parent="0.30">14:38:51.698 request:
+1 &gt; GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user/1
 1 &gt; Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-14:38:47.167 response time in milliseconds: 111
+14:38:51.843 response time in milliseconds: 139
 1 &lt; 200
-1 &lt; Date: Thu, 29 Jan 2026 13:38:47 GMT
+1 &lt; Date: Thu, 29 Jan 2026 13:38:52 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Cache-Control: no-cache,no-store
 1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
 1 &lt; Pragma: no-cache
-1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW3y6PMpINfdhcesLoBdzwWSLaCgeU83WYUhpxTqId1OmifvyY7GEsxu3DHHU5AX7Ettq4F6J0lH0QhDDCruZeYZXAFvMlEbxIteGLuKGV5xwMCyaYY8dpfs5gN1WYpH4z5KwCJyUDPET-xvjTP5vlVb7KUj7Q0t_hsqzs3thSYHDZuoVx7FF2S_c5NxyRJXs6KF8tF0VGwkVmIi1vhKh7oB-dAea72xpbdXbQl_6tYekeXLdYAO-Zk5_MPVI1DbO0UWjBO7slLRa_xtXjtn_quGTpfcVB5mFevvsRVQBodisg6Zjvvt1SvKykLO5CNJqiEdzVF920_Kf0oWyY7vPK6rjNmT-AlGxCp5TVE-5K1JSTIoGHukdMd1cEfxTsl9Fr7d8-frbws1aKy_Lg6zduMZ1VzK8ZgUk_pfPL2M5guYXaIK_MKTEGrkvaRf2tAjcpYhN2Xq9NP-FPRyYqVU4-7f4SQ7j2-psRGzdBgc6GgZccGPor9lCPHm-06OmvySZjF7YtruZb1CPGaIaGaMcWVZyE8Ksrf8rZYXm3ze0E5OAnAxPx6cfFMVDk7xYdmgsqI_4RszI4Hm99y0d7WP_E-VFVNC1LHE1jKsHyVeZjn1264-Litdbfc02zbEX5QJQnesUU_YhPlRYPeEiEVY8gwmMF0uozw6ZbRLdstOWrqAOXSCkAfz3rdP_nRR43eezjzjJne8MASHZUPitaoHpOqJE2n2sd7BTSjndhTg4pusCIuymCeqT4PuW6ZZBGh9Y3AUJyo9oyMm5MAVWt2LWk1Mmreskx0GUf6idfS0NJrsnOpBmVcjoaAYz12b7jtZfNeFLR2wr9Id-nRbD2Dd2DMhrCPca7rflGDmb3Xua5D3ORIrCpi2zzC2VPRr6vEXNqYcYnO1RF5ZG0mTmA7PVA6_W5j5oo6EFksJCIvyrp358DwAW0kadDw788CGtQh0Rz_8C7HG9CynqLBIxoDzaqzg; path=/; secure; samesite=none; Partitioned
+1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW2Kz2pvnrUZdIz6uXfbjI54762XtF0BcUD0gbdwtTtGNnr9bx1JwoGXGvyK1BKYK5WqnqvpLfDstqdrgeI4oBbLCTdmCnm4WCu34y7by4tVLLiHJYFUexeWZUZFxAeueu0UyZqo8Crqm4-uBnZ76OtrPZuPbxcXUoO6Y5I0pECYl0H2it5ScOMKVm0j2II6KlrSbiyBBwsTkPg1gSQdKEqVCgtaC5gOe5drUwnIHtI6kiYPT32FyHy3FDbcSnj6eQWwULWTN1OrrnqsdVlYRFUvJs27RFVxI9BoJ49lQETeAsYOhIN3rZGB4gS1PE5fTB-oO7SWU-118hXdicR5nmr2iGyoBsbpo7K9_fsHNNVBU--7DNyn7osjkABk8wLkQxnd-cLOmiZg3m6Ky3WqCqJAJDVLGQeit-Gs5O9DcId-willuj0D1bcJ32M31ydKDWZu7y6NS5tycO5AaG0rFFc-5WiIzaSEnGuPZyHDCCVdBiztH9nJYqoSm665PPZKCO7GG69ogMPIk6dJCF4UmXGOQJdSTY1xI373QpX312ADsXg2-0ElflK2YsvZH7FiAFAmXn74g_Y7KMdflW579jfAOw92MHqjoqxkZ211OoEQQ_FjkpBSdATb2s3T4cirL48Z6Iyha2N975QLF8Fjn2G3KBgLXbjAqTVWJsNv5aUGTs0bvSx6E8LBzVQylh-9Un3DFp3aFcvyo88i8YQtpRhucq86Xv84tKP5ZSCtv1qWXKcD0Vt-4hwhqV-EflfclK_jqSqq92LbMPeb2LFqp5dDcQO1PUGT0CIZhDv_zsna1EaNbGC9XpyXqKxHasKQjPLFI2oqlW7MLfWq3EFZmBGjg29vYD6PA3qNpiTSwqFjjpd-aGw7VFV6CYPdkQ7bzMCbQUEMvEAAOjwH8tao5_LBuLXm5IZRMnGrI6kCP5f8n82aHar9ZZYkMBuBjAx4hEed7Az0KCIWwMq2yIpcB7Uo; path=/; secure; samesite=none; Partitioned
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; RateLimit-Limit: HttpRequestRatePerPort:1500/m
 1 &lt; RateLimit-Limit: ClientConnectionsPerPort: max 1000
-1 &lt; RateLimit-Remaining: HttpRequestRatePerPort:1497
+1 &lt; RateLimit-Remaining: HttpRequestRatePerPort:1496
 1 &lt; RateLimit-Remaining: ClientConnectionsPerPort:999
-1 &lt; RateLimit-Reset: HttpRequestRatePerPort:33s
+1 &lt; RateLimit-Reset: HttpRequestRatePerPort:22s
 1 &lt; X-Report-Abuse: https://msrc.microsoft.com/report/abuse
 1 &lt; x-ms-ratelimit-limit: 1500
-1 &lt; x-ms-ratelimit-remaining: 1499
-1 &lt; x-ms-ratelimit-used: 1
+1 &lt; x-ms-ratelimit-remaining: 1494
+1 &lt; x-ms-ratelimit-used: 6
 1 &lt; x-ms-ratelimit-reset: 0
 1 &lt; X-Powered-By: Express
 1 &lt; X-Robots-Tag: noindex, nofollow
 1 &lt; Referrer-Policy: same-origin
-1 &lt; VsSaaS-Request-Id: dd31b35f-1c46-4f01-ad10-bb84464056bb
+1 &lt; VsSaaS-Request-Id: d570b9ef-14d3-4f49-b016-2a00537f0467
 1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
 1 &lt; X-Served-By: tunnels-prod-rel-euw-v3-cluster
-{&quot;date&quot;:&quot;2022-02-01&quot;,&quot;destination&quot;:&quot;MAD&quot;,&quot;id&quot;:1,&quot;origin&quot;:&quot;WRO&quot;,&quot;userId&quot;:1}
+{&quot;email&quot;:&quot;john.doe@wherever.com&quot;,&quot;id&quot;:1,&quot;name&quot;:&quot;John&quot;,&quot;surname&quot;:&quot;Doe&quot;}
 
 </div>   
 
@@ -881,8 +855,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.34">
-      <div class="step-ref passed">34</div>
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -909,14 +883,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.35">
-      <div class="step-ref passed">35</div>
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.id == 1</span>
+        <span>And</span>&nbsp;<span>match response == expected</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    

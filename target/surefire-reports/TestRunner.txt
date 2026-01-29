@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: examples.bookings.BookingsRunner
+Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.931 s - in examples.bookings.BookingsRunner
+Tests run: 47, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.941 s - in TestRunner
