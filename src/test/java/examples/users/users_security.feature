@@ -30,12 +30,7 @@ Feature: User Security Tests
 
 @medium
     Scenario: API safely rejects large payload by creating a new user
-      * def large = 'X'.repeat(1000000)
-      * def email = utils.randomEmail()
-      * def name = large
-      * def surname = 'Demchyk'
-      * def payload = read('classpath:examples/users/payloads/create-user-template.json')
-
+      * def payload = read('classpath:examples/users/payloads/create-user-large-payload.json')
       Given path 'user'
       And header Content-Type = 'application/json'
       And request payload
