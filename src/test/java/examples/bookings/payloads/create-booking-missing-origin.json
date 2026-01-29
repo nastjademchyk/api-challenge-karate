@@ -1,0 +1,5 @@
+{
+  "date": "#(utils.currentDate())",
+  "destination": "KRA",
+  "userId": 1
+}

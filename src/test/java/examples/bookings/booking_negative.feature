@@ -8,38 +8,34 @@ Feature: Booking Negative Tests
     * def utils = call read('classpath:examples/utils/functions.js')
 
 
-@high
+  @high
   Scenario: Cannot create booking for a non-existing user
+    * def payload = read('classpath:examples/bookings/payloads/non-existing-user.json')
     Given path 'booking'
-    And request { date: "2026-01-23", destination: "POL", origin: "USA", userId: 999}
+    And request payload
     When method post
     Then status 404
 
+
   @medium
   Scenario: Cannot create booking with wrong data formatting
+    * def payload = read('classpath:examples/bookings/payloads/create-booking-wrong-data-format.json')
     Given path 'booking'
-    And request { date: "02.02.2026", destination: "POL", origin: "USA", userId: 1}
+    And request payload
     When method post
     Then status 400
 
 @high
   Scenario: Reject booking creation when origin or destination is provided as full city names instead of 3‑letter airport codes
-  * def date = utils.currentDate()
-  * def destination = "Krakow"
-  * def origin = "Ukraine"
-  * def userId = 1
-  * def payload = read('classpath:examples/bookings/payloads/create-booking-template.json')
+  * def payload = read('classpath:examples/bookings/payloads/create-booking-full-city-names.json')
       Given path 'booking'
       And request payload
       When method post
       Then status 400
+
 @high
   Scenario: Reject booking creation when origin or destination is provided in lower case
-  * def date = utils.currentDate()
-  * def destination = "krk"
-  * def origin = "usa"
-  * def userId = 1
-  * def payload = read('classpath:examples/bookings/payloads/create-booking-template.json')
+  * def payload = read('classpath:examples/bookings/payloads/create-booking-lowercase-airport-codes.json')
     Given path 'booking'
     And request payload
     When method post
@@ -47,11 +43,7 @@ Feature: Booking Negative Tests
 
 @high
   Scenario: Reject booking creation when origin or destination length is less than 3 characters
-  * def date = utils.currentDate()
-  * def destination = "KR"
-  * def origin = "PR"
-  * def userId = 1
-  * def payload = read('classpath:examples/bookings/payloads/create-booking-template.json')
+  * def payload = read('classpath:examples/bookings/payloads/create-booking-short-airport-codes.json')
     Given path 'booking'
     And request payload
     When method post
@@ -59,11 +51,7 @@ Feature: Booking Negative Tests
 
   @heigh
   Scenario: Reject booking creation when userId is string
-    * def date = utils.currentDate()
-    * def destination = "KRA"
-    * def origin = "USA"
-    * def userId =  "one"
-    * def payload = read('classpath:examples/bookings/payloads/create-booking-template.json')
+    * def payload = read('classpath:examples/bookings/payloads/create-booking-userid-string.json')
     Given path 'booking'
     And request payload
     When method post
@@ -71,10 +59,7 @@ Feature: Booking Negative Tests
 
 @high
   Scenario: Reject booking creation without origin field
-  * def date = utils.currentDate()
-  * def destination = "KRA"
-  * def userId =  "one"
-  * def payload = read('classpath:examples/bookings/payloads/create-booking-template.json')
+  * def payload = read('classpath:examples/bookings/payloads/create-booking-missing-origin.json')
     Given path 'booking'
     And request payload
     When method post
@@ -82,15 +67,17 @@ Feature: Booking Negative Tests
 
 @high
   Scenario: Reject booking creation when date field is empty
+    * def payload = read('classpath:examples/bookings/payloads/create-booking-empty-date.json')
     Given path 'booking'
-    And request { date: "", destination: "KRA", origin: "USA", userId: 1 }
+    And request payload
     When method post
     Then status 400
 
 @high
   Scenario: Reject booking creation when userId is negative
+    * def payload = read('classpath:examples/bookings/payloads/create-booking-negative-userid.json')
     Given path 'booking'
-    And request { date: "2026-01-26", destination: "KRA", origin: "USA", userId: -5 }
+    And request payload
     When method post
     Then status 400
 
@@ -100,7 +87,6 @@ Feature: Booking Negative Tests
     And request {}
     When method post
     Then status 400
-
 
 
 @medium

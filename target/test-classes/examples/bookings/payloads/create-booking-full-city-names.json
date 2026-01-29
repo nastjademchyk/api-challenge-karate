@@ -1,0 +1,6 @@
+{
+  "date": "#(utils.currentDate())",
+  "destination": "Krakow",
+  "origin": "Ukraine",
+  "userId": "1"
+}

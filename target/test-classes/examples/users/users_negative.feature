@@ -8,33 +8,31 @@ Background:
 
   @high
   Scenario: Cannot create user without email
+    * def payload = read('classpath:examples/users/payloads/create-user-missing-email.json')
     Given path 'user'
-    And request { name: 'Chelsia', surname: 'Demchyk' }
+    And request payload
     When method post
     Then status 400
 
   @high
   Scenario: Cannot create user without surname
-    * def email = utils.randomEmail()
+    * def payload = read('classpath:examples/users/payloads/create-user-missing-surname.json')
     Given path 'user'
-    And request { email: '#(email)', name: 'Chelsia',  }
+    And request payload
     When method post
     Then status 400
 
 @high
   Scenario: Cannot create user without name
-    * def email = utils.randomEmail()
+  * def payload = read('classpath:examples/users/payloads/create-user-missing-name.json')
     Given path 'user'
-    And request { email: '#(email)', surname: 'Demchyk'  }
+    And request payload
     When method post
     Then status 400
 
   @high
   Scenario: Reject user creation when email value is numeric
-    * def email = 12345
-    * def name = 'Chelsia'
-    * def surname = 'Demchyk'
-    * def payload = read('classpath:examples/users/payloads/create-user-template.json')
+    * def payload = read('classpath:examples/users/payloads/create-user-numeric-email.json')
     Given path 'user'
     And request payload
     When method post
@@ -42,11 +40,7 @@ Background:
 
 @high
   Scenario: Cannot create user if name value is not a string
-  * def email = utils.randomEmail()
-  * def name = 1234
-  * def surname = 'Demchyk'
-  * def payload = read('classpath:examples/users/payloads/create-user-template.json')
-
+  * def payload = read('classpath:examples/users/payloads/create-user-non-string-name.json')
     Given path 'user'
     And request payload
     When method post
@@ -60,10 +54,7 @@ Background:
 
 @medium
   Scenario: User with given email exists already
-    * def email = utils.randomEmail()
-  * def name = "Nastja"
-  * def surname = 'Demchyk'
-  * def payload = read('classpath:examples/users/payloads/create-user-template.json')
+  * def payload = read('classpath:examples/users/payloads/create-user-valid.json')
     Given path 'user'
     And header Content-Type = 'application/json'
     And request payload
@@ -77,10 +68,7 @@ Background:
 
 @high
 Scenario: User cannot be created if the name field is empty
-  * def email = utils.randomEmail()
-  * def name = ""
-  * def surname = 'Demchyk'
-  * def payload = read('classpath:examples/users/payloads/create-user-template.json')
+  * def payload = read('classpath:examples/users/payloads/create-user-empty-name.json')
   Given path 'user'
   And request payload
   When method post

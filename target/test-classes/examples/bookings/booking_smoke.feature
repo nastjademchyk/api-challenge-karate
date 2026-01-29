@@ -9,9 +9,9 @@ Feature: Booking Positive Tests
 
 @high
   Scenario: Create new booking with valid data (date, destination, origin, userId)
-    * def today = utils.currentDate()
+  * def payload = read('classpath:examples/bookings/payloads/create-booking-valid.json')
     Given path 'booking'
-    And request { date: "#(today)", destination: "USA", origin: "KRK", userId: 1 }
+    And request payload
     When method post
     Then status 201
 

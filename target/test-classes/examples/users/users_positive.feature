@@ -6,19 +6,7 @@ Feature: Users Positive Tests
     * configure ssl = true
     * url baseUrl
     * def utils = call read('classpath:examples/utils/functions.js')
-    * def name = "Alex"
-    * def surname = "Smith"
 
-
-
-  @functional @medium
-  Scenario: Create new user with dynamically generated valid email
-    * def email = utils.randomEmail()
-    * def payload = read('classpath:examples/users/payloads/create-user-template.json')
-    Given path 'user'
-    And request payload
-    When method post
-    Then status 201
 
   @functional @medium
   Scenario: Create user with explicit Accept and Content-Type headers
