@@ -1,8 +1,0 @@
-{
-  "date": "#(date)",
-  "destination": "#(destination)",
-  "origin": "#(origin)",
-  "userId":"#(userId)"
-}
-
-

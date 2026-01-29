@@ -5,7 +5,7 @@ This project contains automated tests written in Karate Framework for the applic
 ### API Overview
 Endpoints for managing User operations
 ```bash
-POST  /user      - Create a new user
+POST  /user       - Create a new user
 GET   /user       - Get all users
 GET   /user/{id}  - Get user
 ```
@@ -39,7 +39,7 @@ The following steps describe how to run the BookingApp API inside GitHub Codespa
 **5. Make the API publicly accessible**
 - Open Ports tab
 - Locate port 8900
-- Set Visibility → Public
+- Set Visibility - Public
 
 **6. Update baseUrl for Karate tests**
 - Each Codespace instance generates a unique application URL.
@@ -69,11 +69,12 @@ Tests are also prioritized with tags:
 ## Running Tests
 
 ### Prerequisites
-Java and Maven installed
+- Java 21 (recommended) or Java 17 installed
+- Maven installed
 
 ### Running All Tests: 
 ```bash
-mvn clean test -Dkarate.env=local -Dkarate.options="--tags @allTests"
+mvn clean test -Dkarate.env=local -Dkarate.options="--tags @allTests" -Dtest=TestRunner
 ```
 
 ### Running Tests by Tag

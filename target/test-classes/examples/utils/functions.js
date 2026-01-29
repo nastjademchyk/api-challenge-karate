@@ -7,7 +7,7 @@ function utils() {
   function currentDate() {
     return LocalDate.now().toString();
   }
-  
+
   function randomEmail() {
     var ts = java.lang.System.currentTimeMillis();
     return 'user_' + ts + '@example.com';
