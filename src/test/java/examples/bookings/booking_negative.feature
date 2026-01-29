@@ -7,7 +7,6 @@ Feature: Booking Negative Tests
     * url baseUrl
     * def utils = call read('classpath:examples/utils/functions.js')
 
-
   @high
   Scenario: Cannot create booking for a non-existing user
     * def payload = read('classpath:examples/bookings/payloads/non-existing-user.json')
@@ -82,7 +81,7 @@ Feature: Booking Negative Tests
     Then status 400
 
 @high
-  Scenario: Cannot create user with empty JSON object
+  Scenario: Cannot create booking with empty JSON object
     Given path 'booking'
     And request {}
     When method post
@@ -104,23 +103,26 @@ Feature: Booking Negative Tests
 
 @low
   Scenario: Reject providing bookings without userId
+  * def payload = read('classpath:examples/bookings/payloads/booking-without-userId.json')
     Given path 'booking'
-    And request { date: "2026-01-27"}
+    And request payload
     When method get
     Then status 400
 
   @low
   Scenario: Reject providing bookings without date
+    * def payload = read('classpath:examples/bookings/payloads/booking-without-date.json')
     Given path 'booking'
-    And request { userId: 1}
+    And request payload
     When method get
     Then status 400
 
 
 @medium
   Scenario: Reject providing bookings with wrong data formatting
+  * def payload = read('classpath:examples/bookings/payloads/booking-request-wrong-data-formatting.json')
     Given path 'booking'
-    And request { date: "2026.01.27", userId: 1}
+    And request payload
     When method get
     Then status 400
 

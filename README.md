@@ -1,6 +1,6 @@
 # API Testing Project with Karate Framework
 
-This project contains automated tests written in Karate Framework for the application BookingApp, which exposes a REST API for managing users and bookings.
+This project contains automated tests written using the Karate Framework for the application BookingApp, which exposes a REST API for managing users and bookings.
 
 ### API Overview
 Endpoints for managing User operations
@@ -30,12 +30,16 @@ The following steps describe how to run the BookingApp API inside GitHub Codespa
 - The file api_testing_service_latest.tar.xz must exist in the repository.
 
 **3. Load the Docker image**
-- In terminal to load Image use: docker load -i api_testing_service_latest.tar.xz
-
+In terminal to load Image use
+```bash
+docker load -i api_testing_service_latest.tar.xz
+```
 **4. To run application**
 
-- In terminal use: docker run -d -p 8900:8900 --name apiservice api_testing_service
-
+- In terminal run
+```bash
+docker run -d -p 8900:8900 --name apiservice api_testing_service
+```
 **5. Make the API publicly accessible**
 - Open Ports tab
 - Locate port 8900
@@ -123,6 +127,10 @@ mvn test -Dkarate.env=acc
 # Run tests against production environment
 mvn test -Dkarate.env=prod
 ```
+**Note!**
+For the scope of this task, tests are executed only against the local environment
+(GitHub Codespaces). Other environments (test, acc, prod) are defined for demonstration
+purposes and future scalability.
 
 
 ## Generating and Viewing Test Reports

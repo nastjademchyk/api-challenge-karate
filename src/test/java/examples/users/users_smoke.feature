@@ -16,7 +16,7 @@ Feature: Users Positive Tests
     Then status 201
 
 
-  @high
+  @high @new
   Scenario: Get all users
     Given path 'user'
     When method get

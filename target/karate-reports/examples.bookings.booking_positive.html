@@ -38,7 +38,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-pass" class="bg-success">2</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -49,22 +49,16 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-01-29 10:42:22 AM</div>
+    <div>2026-01-29 01:31:17 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1.1:20]"><span>[1.1:20]</span> <span>Create booking with various valid IATA-like codes</span></a>
+            <a href="#[1.1:20]"><span>[1.1:20]</span> <span>Create booking with 2 valid IATA-like codes</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[1.2:21]"><span>[1.2:21]</span> <span>Create booking with various valid IATA-like codes</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[1.3:22]"><span>[1.3:22]</span> <span>Create booking with various valid IATA-like codes</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[1.4:23]"><span>[1.4:23]</span> <span>Create booking with various valid IATA-like codes</span></a>
+            <a href="#[1.2:21]"><span>[1.2:21]</span> <span>Create booking with 2 valid IATA-like codes</span></a>
           </div>
         </div>
       </div>
@@ -85,12 +79,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[1.1:20]</span>
-                <span class="scenario-name">Create booking with various valid IATA-like codes</span>
+                <span class="scenario-name">Create booking with 2 valid IATA-like codes</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>166</span>
+              <span>ms:</span>&nbsp;<span>140</span>
             </div>
           </div>
           <div class="step-row">
@@ -122,7 +116,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.6">10:42:21.843 karate.env system property was: local 
+  <div class="preformatted" data-parent="1.6">13:31:16.786 karate.env system property was: local 
 </div>   
 
   
@@ -170,7 +164,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def utils = call read(&#39;classpath:examples/utils/functions.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -226,7 +220,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;booking&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -282,7 +276,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">160</div>
+    <div class="time-cell passed">132</div>
   </div>
 
    
@@ -291,7 +285,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.15">10:42:21.844 request:
+  <div class="preformatted" data-parent="1.15">13:31:16.796 request:
 1 &gt; POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 67
@@ -301,22 +295,22 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;date&quot;:&quot;2026-01-29&quot;,&quot;destination&quot;:&quot;LWO&quot;,&quot;origin&quot;:&quot;KRK&quot;,&quot;userId&quot;:1}
 
-10:42:22.008 response time in milliseconds: 162
+13:31:16.926 response time in milliseconds: 128
 1 &lt; 201
-1 &lt; Date: Thu, 29 Jan 2026 09:42:22 GMT
+1 &lt; Date: Thu, 29 Jan 2026 12:31:17 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Cache-Control: no-cache,no-store
 1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
 1 &lt; Pragma: no-cache
-1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW3pkdKKM5-Z9NmmCg9SD6Y07RShRwfWCLmfvtGripXW7NhEx-BdLW_saWsafMW5xB-1nWWjqTPtncfCnX7T4ByBocbSFWxZHnr4SEUoWfozfR1zsT7NCn4EG8jNeYNNzlqB3Zs4DKHw0sfXobw12NpSApiw3y2YXmlQb6GhjpsTF3BbaLEGkIP9wgowa17sT_TI5iSb2Fycmma2cRsmtHwV0I2d8IafeFsmfqXD_B1eBv4a6Sje_owXLbh3k4BJXrPoZPc9GDDhwo7nZbtpKlBlKMlXmgpHXWEvP60L5SNR9-CrDuJFLki0lSD_6VXj_mP8v5ilpdQj1d0PT-bzzSrX3YYEwyWnifl53Glf6TW7aFGYWuNpzRKwVSAhlfJsaUyMp0-yZdpolklKST9L64i58De_9CCYKY83VOcOkBwJe_j76wgtoiukdggnsv6qR0oKsIIiIDvmt3lwb0oFW3f4mJCZgUi-rvv4hPbIsMxL76hknzJZmnyZtVOeNDunhzes4L2y1fZAb29lyy-meXELTQutVODYgQJg9kp6tJOXoAnSOomwhumj-T2pEHRnWjGOeMlgvO04iBUqUUS8UxiC_TAM4tArZLsCoY9cprmlZm4p4i7NAP0fGYiDjVBTznfeKpc36FCQHggygbpa8bYtpHYLyNpV1hJxlJqUjEyEjO9TfrV5nciz9l8JJZsc9ok2-G9zWJbaAaoeKE97ULSPaiwrc2SEuQWz4w12ukhY8MGNZ1088ELE40lpYbUZBW7bt7_lY2FqhYcoZv22sr72ycBKHua2KEXA_k4fVaU5RtBHD_f0EjfPqULfhIKd_psIlsy0efRWoM_emlrW_QbGTRVj68hMKd0kQ_xkheHs9aGYJ1-xCX-81d27QPK-heIlU6fAL2CAu0Owgwt2bpEgQpFN83oCKZWKS5ACsKU5bHYVGRxDTZi0UhN5P2oOybx2rAJcxDM_SyemE27MW5zl; path=/; secure; samesite=none; Partitioned
+1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW0y2iy2SayckbMBy5lSkEJ_gWGysO_hsnLCBOKIQuc2OJjNWds1mnynTJERaji62v8sTTFHwOnoXdTqC1Vi1gGpFpBnW1BrxTlLTEgQ7-fkNmMhP6ZZk2YYLm-oMR7QC9cBtOoWqZ-ezujJ_d2CHa1aDEa8j2ovVtQIpYrI8WifZapTeIekp-XmnSw9eYD-Y_ehJvzKacV6da9qoqQVqarUzMRds480KMI6Xjb_ytTSidevVKi_L5lFckt_0j4GHQuhaav0OUfEKVwnwmq9UnH7VdvHULDBlYxtUN8gFfm0FoCSCNDeYrIlw_DaykHKyqimaKsA3RRNuJJZyEUPq7JO2gM9mNjRNl3A41ErlW6siWTYOJ1YiqU1W_UjSHtVquasP1A8sZVajtK4OsbswMtiB1Ij5CU6iwxHOPm-sI8v-xccz_G8MDZq8v4BJRSh9BbFwhFBjsFG-K_prURqitH4d5OgYxnX6H3kkOYCBv9BBSIcXlOLOsce-H1Q522i3CeZy5-pGnj_m7ydID-FB7sjCA2gWJ6wkMMr820AzRl07NjQsc-ANw8ecI0In9jMspoX3kLNHeKSIzbEEKDXb50BjC8lbxlkt8RVSyhYmhuqbpdC2EX6lvcL2vchU2tmKTYctkj5hB7_-tEmQDjmXz9MvDyYFBYtymuyqewhMF5y0K5_DIrXFUBUBcP2OAvVoRk4sSkjq21Ovpf_tJ1B1rFQj2y220mcireT7Z2yO_R0NxaY5gZU_uxppGHxgKS5MecFOOfgX8uRs2lPSwpnTYRj0bHvbcpjWhTA1fGWfH06tIZ__N-3can3xxyWMvdAcygQQhmoq0uEjxABwMCMkydlsq43JhMlUghuIpM0jDsAcWH-yx-Tm74U5-julB5XV2hlpdE4NDr_gObvIE3Zx3uHO_1j2AMQ1sP8DnghRhFw3VQWC9PSrO4xvWh8qzYIKr48hU4tYbSBNCJ1KFVs3EB3; path=/; secure; samesite=none; Partitioned
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; RateLimit-Limit: HttpRequestRatePerPort:1500/m
 1 &lt; RateLimit-Limit: ClientConnectionsPerPort: max 1000
 1 &lt; RateLimit-Remaining: HttpRequestRatePerPort:1498
 1 &lt; RateLimit-Remaining: ClientConnectionsPerPort:999
-1 &lt; RateLimit-Reset: HttpRequestRatePerPort:48s
+1 &lt; RateLimit-Reset: HttpRequestRatePerPort:41s
 1 &lt; X-Report-Abuse: https://msrc.microsoft.com/report/abuse
 1 &lt; x-ms-ratelimit-limit: 1500
 1 &lt; x-ms-ratelimit-remaining: 1496
@@ -325,10 +319,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Powered-By: Express
 1 &lt; X-Robots-Tag: noindex, nofollow
 1 &lt; Referrer-Policy: same-origin
-1 &lt; VsSaaS-Request-Id: 61c8f746-00b5-4525-abb9-3550ec622525
+1 &lt; VsSaaS-Request-Id: 8e3b432c-60f3-47d9-b7b8-daae92cf49b1
 1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
 1 &lt; X-Served-By: tunnels-prod-rel-euw-v3-cluster
-{&quot;date&quot;:&quot;2026-01-29&quot;,&quot;destination&quot;:&quot;LWO&quot;,&quot;id&quot;:21,&quot;origin&quot;:&quot;KRK&quot;,&quot;userId&quot;:1}
+{&quot;date&quot;:&quot;2026-01-29&quot;,&quot;destination&quot;:&quot;LWO&quot;,&quot;id&quot;:6,&quot;origin&quot;:&quot;KRK&quot;,&quot;userId&quot;:1}
 
 </div>   
 
@@ -373,12 +367,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[1.2:21]</span>
-                <span class="scenario-name">Create booking with various valid IATA-like codes</span>
+                <span class="scenario-name">Create booking with 2 valid IATA-like codes</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>142</span>
+              <span>ms:</span>&nbsp;<span>151</span>
             </div>
           </div>
           <div class="step-row">
@@ -410,7 +404,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.6">10:42:22.022 karate.env system property was: local 
+  <div class="preformatted" data-parent="2.6">13:31:16.935 karate.env system property was: local 
 </div>   
 
   
@@ -486,7 +480,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def today = utils.currentDate()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -570,7 +564,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">138</div>
+    <div class="time-cell passed">146</div>
   </div>
 
    
@@ -579,7 +573,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.15">10:42:22.028 request:
+  <div class="preformatted" data-parent="2.15">13:31:16.943 request:
 1 &gt; POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 67
@@ -589,22 +583,22 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;date&quot;:&quot;2026-01-29&quot;,&quot;destination&quot;:&quot;WAW&quot;,&quot;origin&quot;:&quot;FRA&quot;,&quot;userId&quot;:2}
 
-10:42:22.162 response time in milliseconds: 134
+13:31:17.086 response time in milliseconds: 142
 1 &lt; 201
-1 &lt; Date: Thu, 29 Jan 2026 09:42:22 GMT
+1 &lt; Date: Thu, 29 Jan 2026 12:31:17 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Cache-Control: no-cache,no-store
 1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
 1 &lt; Pragma: no-cache
-1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW0U2WMJ5OKdr4Hy3FbsW61fgjroyBiUgnuoC_CJJxw9gUzV6sC5CPOm9a0IMBzANhnN3vnQ_69J6rHGQ49cIRq-3ckRQ5bLypfPMFFuJBJCbaY-pEvCIvte5uaymqDE5aLkhZAxpC843r7tsPHRh-Myxlf_8QZr7lM68wtiOrIiOlQMwG1CRsZoHzef7c3_BqsWGw3oXnveG3uwgfSqLDcoc_FEgVjMF9erpXQ5QEShK6pz_LK5N75tRjcqMaiiu_QxedxHX849bs9GbyGtvZROryIOPS9wLB2MTJ5_xjNj35p_l92LeFy-x_3TAUeLMUBFtLFsVQs7OGsGLze_mXGsYuyTZxz4omj1b7wrN-8eEfSCXUqZBzII6FQrzVTIFZc03uxs1cvPDnELU1D42AUbD0Z0bzTHmCxymWWqX1uCfhZTumBai0jtBMdlhWWeTNnrdawpHooK-nl-EvyahATZUbxd6da6Po6QdF2osyZH8I7JWjlY2yXi9tx7uVFtKILvoFjUdD5w-c5YxqBWyo30QHM-I9FJmbqZblU_qPS84Bh7S1aU67-fqfIuVijhIyS4bJm7mSWFZNWcz5ackLEZCgb2gSrECuT970PfDMpXiKvXEreeoC81BTpb3hBlX2oQ7PGrouyEMVATDgMYlH4qf_OpfnrzM3li0Jm7tOYD5FPbXaeBniN9txvLFtQcesZtzVTihHuXeIljQiV6N3-Nrh1qXPxMsh-coY24nR_Gh1prLTLCKtpPDiSd_OpQkpoFFRF8RfKaPXej0bmLtjkDTTcYUmurw-DnM0vvVcnX-amUEM3F1yvvo5T_wpOk3tL8U47ojNIxbqYIKuVxun4ARa4FWASutIr3inaf6OukErZpUChsp0YBSu1DXGypvv2c8toiku6TfpWHIUl86mKFytZiUJxzOlh8Sq5AoZy4QB4bZFIs7z7hnCZiojGK4WVca_36t9IJbt0i4PYwt9o4; path=/; secure; samesite=none; Partitioned
+1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW25oXuOgSigVxQp6Iw5ldg2H0lVsMOrt7hg3CaIP30let7IETn8I161I_H3wCOwWJpYeuFpSVt_3_hMiN3wlarH9HQysk67paGpJl08EArY9U3sLXFayQ7HGnoYmb_t8DhQFdi8Cqp2MvQQY0myMX2gmvrQEdLOGP_i4madUS9FDAk6nWVBpKnLhEcOKzNEx0tq0aPC2Ibkr-0kT6gwEjPYpmP0nUBgW2n58-TPbl_G-6jjgvi2wg1W8NzlKxgivq8bCg97FvIcCTvod2i70mj4jq97QqrtiPz_Kcl9wUz39FY-DNkibKZzi9pJ0jLt9ZMs9jobf4gf1yz7Exlc05ogE1fygQiy-sXdKezOl2QRvlVgDWMm1FCRx8Yms9RsrDy5HFiJIJJmpmGjWjficX4C25r5wSJ1YoxZ0kEE2HaGXuZa2v_IvVnYV5-uste-8CVyXQejiRnnipgADmvhY4VV4dE7g47b2Tq-wx_bzPiqqfEuBwnYNwXCo2QVatAlrJicVj4O3GGbHUsGpFvGgLfFzo6UYCjE90i6ap33OpTLEGs_TKxSDNBRMpIPRP0ujN2f-6AqGeK_IWMMix7uDPfNRX9DFEZwdg_DBwJ7C6XjP80_F_vhqeuFVLvWjI1UQfgbgeyFBpkSbyqb9_uRio_m8rp9yfPmI9S8e23r-3m4Haq2gmT-5_RGs814CCmnrKrwEWQ2nz2zbzleedu6UV4Urn26C1jgv1aVgLPg9fgifWniGkr3h8n5CESCU_6d7dVjGVrSqOV7n7-SPqkny2SDCIZHHE9BidVKJCE0-H4cSRvHc-2hv2q14yjwPMEQH_c-riTNBVlEm7lHJRuZgMJfgAlfAMGL-C_VLcPwF5938PAVoiVMha_6YlXfuH3Xsy0joaFIWxsjLzPo__etMposvG5Ps55M4avpVQv12LoLamxZhp2kxScejcNUzMjYxHHnLmZlv64qlEgzn9dDG6XD; path=/; secure; samesite=none; Partitioned
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; RateLimit-Limit: HttpRequestRatePerPort:1500/m
 1 &lt; RateLimit-Limit: ClientConnectionsPerPort: max 1000
 1 &lt; RateLimit-Remaining: HttpRequestRatePerPort:1498
 1 &lt; RateLimit-Remaining: ClientConnectionsPerPort:999
-1 &lt; RateLimit-Reset: HttpRequestRatePerPort:20s
+1 &lt; RateLimit-Reset: HttpRequestRatePerPort:11s
 1 &lt; X-Report-Abuse: https://msrc.microsoft.com/report/abuse
 1 &lt; x-ms-ratelimit-limit: 1500
 1 &lt; x-ms-ratelimit-remaining: 1496
@@ -613,10 +607,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Powered-By: Express
 1 &lt; X-Robots-Tag: noindex, nofollow
 1 &lt; Referrer-Policy: same-origin
-1 &lt; VsSaaS-Request-Id: 1b20825b-303e-4ab0-a9cc-76304dfd1401
+1 &lt; VsSaaS-Request-Id: 2b849fd5-d48b-4187-89d8-5bad15e9654c
 1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
 1 &lt; X-Served-By: tunnels-prod-rel-euw-v3-cluster
-{&quot;date&quot;:&quot;2026-01-29&quot;,&quot;destination&quot;:&quot;WAW&quot;,&quot;id&quot;:22,&quot;origin&quot;:&quot;FRA&quot;,&quot;userId&quot;:2}
+{&quot;date&quot;:&quot;2026-01-29&quot;,&quot;destination&quot;:&quot;WAW&quot;,&quot;id&quot;:7,&quot;origin&quot;:&quot;FRA&quot;,&quot;userId&quot;:2}
 
 </div>   
 
@@ -631,582 +625,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="2.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 201</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[1.3:22]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">functional</a><a class="badge badge-primary" href="karate-tags.html">positive</a><a class="badge badge-primary" href="karate-tags.html">medium</a><a class="badge badge-primary" href="karate-tags.html">allTests</a>
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[1.3:22]</span>
-                <span class="scenario-name">Create booking with various valid IATA-like codes</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>165</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[1.3:22]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[1.3:22]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure ssl = true</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="3.6">10:42:22.170 karate.env system property was: local 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.3:22]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url baseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.3:22]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.8">
-      <div class="step-ref bg-step">8</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def utils = call read(&#39;classpath:examples/utils/functions.js&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.12">
-      <div class="step-ref passed">12</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def today = utils.currentDate()</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.13">
-      <div class="step-ref passed">13</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;booking&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.14">
-      <div class="step-ref passed">14</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { date: &quot;#(today)&quot;, destination: &quot;LHR&quot;, origin: &quot;CDG&quot;, userId: 3 }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.15">
-      <div class="step-ref passed">15</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">160</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="3.15">10:42:22.182 request:
-1 &gt; POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 67
-1 &gt; Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2026-01-29&quot;,&quot;destination&quot;:&quot;LHR&quot;,&quot;origin&quot;:&quot;CDG&quot;,&quot;userId&quot;:3}
-
-10:42:22.338 response time in milliseconds: 156
-1 &lt; 201
-1 &lt; Date: Thu, 29 Jan 2026 09:42:22 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; Cache-Control: no-cache,no-store
-1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
-1 &lt; Pragma: no-cache
-1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW0wAkLkRg-L2hIr99NRGfXkbG09_IoDTXXdUXTnAxRJDO2nu3PUY0lrsGfv79ylrW3nB0pXmEn88zo7qd2cybmDa-1E654APoCWcBA-H5NxgNmHANyinheaHoR9HenmXSG3SFRC-beTt32-pHscnpu6jzZ2jlQ-9d8wGob6M6oBlgjKvwaI7rxTDQfPu-kVe_X2Ga_o37kfBxrdTP1Ni-OSn1cH5RBb_Q7NcDMysagay8x0leBZuE-gAzdVhy7JBmTFPe7rN7ZTq-tINUEgMTR-RpsBTGLepF7OH_qkUz_uyQwkLM97tJL5-heS-w_Iog_cEpaMRMowMIl4qRFXeIYxXaZWUhvzfAwsjiPdYHdfQwEgv2JGZ9mxEiImi_mCjUTRjaR7zmCB7Kt9m3ysrVbPogE-PVBWz72yY0YgIcdkrm6qJvbRx2_Au5y-S0q_iiHSbVyps3t3gtZqardpRZK1bFT-NPwu901D1rDmyEn40FPUZ1AXqMBK6BgxWEr21Q-tIMpk9-GErDuuNW7rpMuPja_UFA-38s4AqnJdzSmj9Zp-Xer0C5_T7XsvpHpLLTx5i76ynF6f7hG8zJxtOTv0b4R-OIdra-NL2JGfljof85kZBdiFNm-T_u-An3O2QKJqz0AU854lEM1WaFuEgTRUQzXl0asf6eNdaih3_8m6Qlulr7udXQxp0iCELGOWObv_BZGTml00iQ5qhQw2EhrxR1UY1ZQJM9phCyhk_X-3PIEeQ0HzapdIALNDQjgNh4wT6G7H717Lttf7f3M69Q5Odn_UN1z-ee4YIzOUoq1lCD6DDuTZIEoEariZyzl87CjXnaVWAEiDkaU-puJbnQ82jwgCLvoKV-6EEQZ6RzBd7DYJHlYexi7D2TrKRiUtjAuzvkpkl8xCbUqpWlc2ZWyoOo06U6lx2FKBI5C8HnJKjAr6BIgNC2oDsiINxd8wYYFQkPc5op2_pPs9KW2oU_mu; path=/; secure; samesite=none; Partitioned
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; RateLimit-Limit: HttpRequestRatePerPort:1500/m
-1 &lt; RateLimit-Limit: ClientConnectionsPerPort: max 1000
-1 &lt; RateLimit-Remaining: HttpRequestRatePerPort:1498
-1 &lt; RateLimit-Remaining: ClientConnectionsPerPort:998
-1 &lt; RateLimit-Reset: HttpRequestRatePerPort:35s
-1 &lt; X-Report-Abuse: https://msrc.microsoft.com/report/abuse
-1 &lt; x-ms-ratelimit-limit: 1500
-1 &lt; x-ms-ratelimit-remaining: 1496
-1 &lt; x-ms-ratelimit-used: 4
-1 &lt; x-ms-ratelimit-reset: 0
-1 &lt; X-Powered-By: Express
-1 &lt; X-Robots-Tag: noindex, nofollow
-1 &lt; Referrer-Policy: same-origin
-1 &lt; VsSaaS-Request-Id: e4e4e0cd-ff50-4415-887d-35c49b0644bc
-1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
-1 &lt; X-Served-By: tunnels-prod-rel-euw-v3-cluster
-{&quot;date&quot;:&quot;2026-01-29&quot;,&quot;destination&quot;:&quot;LHR&quot;,&quot;id&quot;:23,&quot;origin&quot;:&quot;CDG&quot;,&quot;userId&quot;:3}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 201</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[1.4:23]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">functional</a><a class="badge badge-primary" href="karate-tags.html">positive</a><a class="badge badge-primary" href="karate-tags.html">medium</a><a class="badge badge-primary" href="karate-tags.html">allTests</a>
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[1.4:23]</span>
-                <span class="scenario-name">Create booking with various valid IATA-like codes</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>133</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[1.4:23]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[1.4:23]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure ssl = true</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="4.6">10:42:22.345 karate.env system property was: local 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.4:23]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url baseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.4:23]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.8">
-      <div class="step-ref bg-step">8</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def utils = call read(&#39;classpath:examples/utils/functions.js&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.12">
-      <div class="step-ref passed">12</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def today = utils.currentDate()</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.13">
-      <div class="step-ref passed">13</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;booking&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.14">
-      <div class="step-ref passed">14</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { date: &quot;#(today)&quot;, destination: &quot;JFK&quot;, origin: &quot;LAX&quot;, userId: 4 }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.15">
-      <div class="step-ref passed">15</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">130</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="4.15">10:42:22.354 request:
-1 &gt; POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 67
-1 &gt; Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;date&quot;:&quot;2026-01-29&quot;,&quot;destination&quot;:&quot;JFK&quot;,&quot;origin&quot;:&quot;LAX&quot;,&quot;userId&quot;:4}
-
-10:42:22.483 response time in milliseconds: 127
-1 &lt; 201
-1 &lt; Date: Thu, 29 Jan 2026 09:42:22 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; Cache-Control: no-cache,no-store
-1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
-1 &lt; Pragma: no-cache
-1 &lt; Set-Cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW1A5XWw2CQSA61eQXJZYhLEGqvzqqv2QgPfZScg21m0Y4uwul-mIWhluq55dO7Ga7P8GAnGry6h_1G_xhWK8UwS_9zTdNZ0Nas49PDshFikGztVIgo_by_yJvdnnGR-1IMEEC2uOl9-1y7-x5p-S8qkqdizpbuNCK1H7Hr81j4smLMykve3F1jK7rU4S0_OUVHp-rr7TPvdLn2977-yAyRdThEjTa85LfAOmrTvmsNZ_Yvx9WuI6eb30ogXFLqxRTDt60J4FOVb1MF_8bg0s2uJeukIaQByOjJaiT3gUoc7BBPs8ICopDbfWqTSo0vhoSUwS4MIsSk0a6IfbrtAKvDSAyGm94K2Paa-J9V9RCKnLwqKZ8T6Y9JbljBhfIsjewi33x6vZRiwwAo7anQjBBSuwvet8utihPYKAm9wE-QuyVmZHRjEE7WplClXMS7M6BXYOpF916OYY-3TfUM6jY6_qYUFOucqkoRROKqNKz07HapI98v4L607tQQaLiMd2hS0rH1p22knFDnq5aMwKF9_UEK7tGRFItxEfTLZa8Cbsghyei-FNSRNxXYaIz3fYwCIikvG23j566x06gv-nA4Th_8HFGf378o2F7DFEsCgQtYrSZU7mV4EYE2J3p-wtqOBCBLFKg9CX7kMXJhsWT3CH6wCiuUOgyDjGECGJfrxzavwydg7O1jkAN3KUaaQ4krytGUEmHAXopzrnscjBRk359UGmwm70yt4z3Uqsz52rrQWQWeZot98wckY_0HGQ-ea5160LFFHVzbDkgaYqNTeZsjPyiRZQJKFCrgZ8xD66MWmJIkaTEn1afKlSqvUHQb_rLj7V4-4RtUcPKBc_cEOwQ8KC9yui3QNFidE1nz-KrT2zmoyeZcDrQn43AYR1pgUJLzO1jqZDms7mVwIap_1eWBxikzKaEyMnFxtgVYJKqzn3w62L8-CjwbkHcxGws_3Re1nfaGjEdNnt8EtS-eA; path=/; secure; samesite=none; Partitioned
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; RateLimit-Limit: HttpRequestRatePerPort:1500/m
-1 &lt; RateLimit-Limit: ClientConnectionsPerPort: max 1000
-1 &lt; RateLimit-Remaining: HttpRequestRatePerPort:1498
-1 &lt; RateLimit-Remaining: ClientConnectionsPerPort:998
-1 &lt; RateLimit-Reset: HttpRequestRatePerPort:41s
-1 &lt; X-Report-Abuse: https://msrc.microsoft.com/report/abuse
-1 &lt; x-ms-ratelimit-limit: 1500
-1 &lt; x-ms-ratelimit-remaining: 1496
-1 &lt; x-ms-ratelimit-used: 4
-1 &lt; x-ms-ratelimit-reset: 0
-1 &lt; X-Powered-By: Express
-1 &lt; X-Robots-Tag: noindex, nofollow
-1 &lt; Referrer-Policy: same-origin
-1 &lt; VsSaaS-Request-Id: 401cc239-ce7d-46b0-89dc-46d532d13e60
-1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
-1 &lt; X-Served-By: tunnels-prod-rel-euw-v3-cluster
-{&quot;date&quot;:&quot;2026-01-29&quot;,&quot;destination&quot;:&quot;JFK&quot;,&quot;id&quot;:24,&quot;origin&quot;:&quot;LAX&quot;,&quot;userId&quot;:4}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.16">
       <div class="step-ref passed">16</div>
       
       <div class="step-cell passed">
