@@ -1,4 +1,71 @@
-16:19:20.782 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @allTests
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.TestRunner" time="17.021" tests="55" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\ademchyk\Desktop\Projects\api-challenge-karate\target\test-classes;C:\Users\ademchyk\Desktop\Projects\api-challenge-karate\target\classes;C:\Users\ademchyk\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\ademchyk\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\ademchyk\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\ademchyk\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\ademchyk\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\ademchyk\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\ademchyk\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\ademchyk\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\ademchyk\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\ademchyk\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\ademchyk\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\ademchyk\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\ademchyk\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\ademchyk\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\ademchyk\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\ademchyk\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\ademchyk\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\ademchyk\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\ademchyk\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\ademchyk\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\ademchyk\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\ademchyk\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\ademchyk\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\ademchyk\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\ademchyk\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\ademchyk\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\ademchyk\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\ademchyk\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\ademchyk\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\ademchyk\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\ademchyk\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\ademchyk\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\ademchyk\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\ademchyk\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\ademchyk\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\ademchyk\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ademchyk\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\ademchyk\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ademchyk\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\ademchyk\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="karate.env" value="local"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="user.country.format" value="PL"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\ademchyk\AppData\Local\Temp\surefire8388066242178169834\surefirebooter-20260130161918915_3.jar C:\Users\ademchyk\AppData\Local\Temp\surefire8388066242178169834 2026-01-30T16-19-18_757-jvmRun1 surefire-20260130161918915_1tmp surefire_0-20260130161918915_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="TestRunner"/>
+    <property name="surefire.test.class.path" value="C:\Users\ademchyk\Desktop\Projects\api-challenge-karate\target\test-classes;C:\Users\ademchyk\Desktop\Projects\api-challenge-karate\target\classes;C:\Users\ademchyk\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\ademchyk\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\ademchyk\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\ademchyk\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\ademchyk\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\ademchyk\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\ademchyk\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\ademchyk\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\ademchyk\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\ademchyk\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\ademchyk\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\ademchyk\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\ademchyk\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\ademchyk\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\ademchyk\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\ademchyk\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\ademchyk\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\ademchyk\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\ademchyk\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\ademchyk\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\ademchyk\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\ademchyk\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\ademchyk\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\ademchyk\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\ademchyk\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\ademchyk\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\ademchyk\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\ademchyk\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\ademchyk\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\ademchyk\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\ademchyk\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\ademchyk\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\ademchyk\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\ademchyk\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\ademchyk\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\ademchyk\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\ademchyk\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\ademchyk\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\ademchyk\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ademchyk\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\ademchyk\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ademchyk\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\ademchyk\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\ademchyk"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.6.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\ademchyk\Desktop\Projects\api-challenge-karate"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="karate.options" value="--tags @allTests"/>
+    <property name="surefire.real.class.path" value="C:\Users\ademchyk\AppData\Local\Temp\surefire8388066242178169834\surefirebooter-20260130161918915_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.6+7-LTS"/>
+    <property name="user.name" value="ademchyk"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.6+7"/>
+    <property name="localRepository" value="C:\Users\ademchyk\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\ademchyk\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.6"/>
+    <property name="user.dir" value="C:\Users\ademchyk\Desktop\Projects\api-challenge-karate"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.language.format" value="pl"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\ademchyk\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ademchyk\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\ServiceNow\agent-client-collector\bin;C:\Program Files\ServiceNow\agent-client-collector\embedded\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\170\Tools\Binn;C:\Users\ademchyk\AppData\Local\Microsoft\WindowsApps;C:\Users\ademchyk\.dotnet\tools;C:\Program Files\apache-maven-3.9.12\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.6+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="[1.1:17] Booking endpoint rejects unsupported HTTP methods" classname="examples/security" time="0.953">
+    <system-out><![CDATA[16:19:20.782 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @allTests
 16:19:20.872 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': local
 16:19:21.399 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
 16:19:22.736 [main] INFO  com.intuit.karate - karate.env system property was: local 
@@ -38,7 +105,10 @@
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"Not Found"}
 
-16:19:23.618 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[1.2:18] Booking endpoint rejects unsupported HTTP methods" classname="examples/security" time="0.244">
+    <system-out><![CDATA[16:19:23.618 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:23.625 [main] DEBUG com.intuit.karate - request:
 1 > PUT https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -75,7 +145,10 @@
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"Not Found"}
 
-16:19:23.865 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[1.3:19] Booking endpoint rejects unsupported HTTP methods" classname="examples/security" time="0.256">
+    <system-out><![CDATA[16:19:23.865 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:23.875 [main] DEBUG com.intuit.karate - request:
 1 > PATCH https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -112,7 +185,10 @@
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"Not Found"}
 
-16:19:24.121 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[2:22] Create booking with invalid Content-Type" classname="examples/security" time="0.29">
+    <system-out><![CDATA[16:19:24.121 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:24.173 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: text/plain; charset=UTF-8
@@ -151,7 +227,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"Invalid content-type: text/plain; charset=UTF-8"}
 
-16:19:24.414 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[3:30] Security headers validation for booking detail endpoint by Id" classname="examples/security" time="0.308">
+    <system-out><![CDATA[16:19:24.414 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:24.435 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking/1
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -187,7 +266,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"date":"2022-02-01","destination":"MAD","id":1,"origin":"WRO","userId":1}
 
-16:19:24.745 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[4:42] Reject unknown fields in create booking" classname="examples/security" time="0.397">
+    <system-out><![CDATA[16:19:24.745 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:24.829 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -226,7 +308,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1booking/post/requestBody/content/application~1json/schema","path":"/userId"},"message":"must be number"}],"message":"Validation errors"}
 
-16:19:25.143 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[5.1:58] Users endpoint rejects unsupported HTTP methods" classname="examples/security" time="0.226">
+    <system-out><![CDATA[16:19:25.143 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:25.154 [main] DEBUG com.intuit.karate - request:
 1 > DELETE https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -263,7 +348,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"Not Found"}
 
-16:19:25.370 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[5.2:59] Users endpoint rejects unsupported HTTP methods" classname="examples/security" time="0.253">
+    <system-out><![CDATA[16:19:25.370 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:25.377 [main] DEBUG com.intuit.karate - request:
 1 > PUT https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -300,7 +388,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"Not Found"}
 
-16:19:25.625 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[5.3:60] Users endpoint rejects unsupported HTTP methods" classname="examples/security" time="0.213">
+    <system-out><![CDATA[16:19:25.625 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:25.632 [main] DEBUG com.intuit.karate - request:
 1 > PATCH https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -337,7 +428,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"Not Found"}
 
-16:19:25.838 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[6:63] User endpoint rejects invalid Content-Type" classname="examples/security" time="0.152">
+    <system-out><![CDATA[16:19:25.838 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:25.846 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: text/plain; charset=UTF-8
@@ -378,7 +472,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"Invalid content-type: text/plain; charset=UTF-8"}
 
-16:19:25.994 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[7:71] API safely rejects large payload by creating a new user" classname="examples/security" time="0.709">
+    <system-out><![CDATA[16:19:25.994 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:26.096 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -417,7 +514,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"request entity too large"}
 
-16:19:26.708 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[8:80] User list must not expose sensitive information: token, apiKey, sessionId, password" classname="examples/security" time="1.08">
+    <system-out><![CDATA[16:19:26.708 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:26.716 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -455,7 +555,15 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 [{"email":"john.doe@wherever.com","id":1,"name":"John","surname":"Doe"},{"email":"jane.doe@somewhere.com","id":2,"name":"Jane","surname":"Doe"},{"email":"user_1769784441879@example.com","id":3,"name":" Nastja ","surname":" Demchyk "},{"email":"user_1769784731269@example.com","id":4,"name":"Анастасія","surname":"Демчик"},{"email":"user_1769784926081@example.com","id":5,"name":"Анастасія","surname":"Демчик"},{"email":"user_1769784926810@example.com","id":6,"name":"123Nastja@!","surname":"?Demchyk%"},{"email":"user_1769785907618@example.com","id":7,"name":"Nastja","surname":"Demchyk"},{"email":"user_1769785912504@example.com","id":8,"name":"Nastja","surname":"Demchyk"},{"email":"user_1769785913750@example.com","id":9,"name":"#(name)","surname":"#(surname)"},{"email":"user_1769785914192@example.com","id":10,"name":"nastja","surname":"demchyk"},{"email":"user_1769785914335@example.com","id":11,"name":"NASTJA","surname":"DEMCHYK"},{"email":"user_1769785914484@example.com","id":12,"name":" Nastja ","surname":" Demchyk "},{"email":"user_1769785914608@example.com","id":13,"name":"Анастасія","surname":"Демчик"},{"email":"user_1769785914749@example.com","id":14,"name":"123Nastja@!","surname":"?Demchyk%"}]
 
-16:19:27.791 [main] INFO  com.intuit.karate - karate.env system property was: local 
+---------------------------------------------------------
+feature: classpath:examples/security.feature
+scenarios: 12 | passed: 12 | failed:  0 | time: 3,9534
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="[1:11] Create new booking with valid data (date, destination, origin, userId)" classname="examples/smoke" time="0.247">
+    <system-out><![CDATA[16:19:27.791 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:27.804 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -495,7 +603,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"date":"2025-01-30","destination":"USA","id":13,"origin":"KRK","userId":1}
 
-16:19:28.038 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[2:20] Get the list of all bookings by userId and date" classname="examples/smoke" time="0.23">
+    <system-out><![CDATA[16:19:28.038 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:28.045 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking?userId=1&date=2026-01-26
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -531,7 +642,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 []
 
-16:19:28.271 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[3:31] Get booking details by booking id" classname="examples/smoke" time="0.166">
+    <system-out><![CDATA[16:19:28.271 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:28.277 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking/1
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -569,7 +683,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"date":"2022-02-01","destination":"MAD","id":1,"origin":"WRO","userId":1}
 
-16:19:28.439 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[4:39] Create new user with valid data" classname="examples/smoke" time="0.207">
+    <system-out><![CDATA[16:19:28.439 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:28.449 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -607,7 +724,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"email":"user_1769786368447@example.com","id":15,"name":"Nastja","surname":"Demchyk"}
 
-16:19:28.647 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[5:48] Get all users" classname="examples/smoke" time="0.176">
+    <system-out><![CDATA[16:19:28.647 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:28.652 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -645,7 +765,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 [{"email":"john.doe@wherever.com","id":1,"name":"John","surname":"Doe"},{"email":"jane.doe@somewhere.com","id":2,"name":"Jane","surname":"Doe"},{"email":"user_1769784441879@example.com","id":3,"name":" Nastja ","surname":" Demchyk "},{"email":"user_1769784731269@example.com","id":4,"name":"Анастасія","surname":"Демчик"},{"email":"user_1769784926081@example.com","id":5,"name":"Анастасія","surname":"Демчик"},{"email":"user_1769784926810@example.com","id":6,"name":"123Nastja@!","surname":"?Demchyk%"},{"email":"user_1769785907618@example.com","id":7,"name":"Nastja","surname":"Demchyk"},{"email":"user_1769785912504@example.com","id":8,"name":"Nastja","surname":"Demchyk"},{"email":"user_1769785913750@example.com","id":9,"name":"#(name)","surname":"#(surname)"},{"email":"user_1769785914192@example.com","id":10,"name":"nastja","surname":"demchyk"},{"email":"user_1769785914335@example.com","id":11,"name":"NASTJA","surname":"DEMCHYK"},{"email":"user_1769785914484@example.com","id":12,"name":" Nastja ","surname":" Demchyk "},{"email":"user_1769785914608@example.com","id":13,"name":"Анастасія","surname":"Демчик"},{"email":"user_1769785914749@example.com","id":14,"name":"123Nastja@!","surname":"?Demchyk%"},{"email":"user_1769786368447@example.com","id":15,"name":"Nastja","surname":"Demchyk"}]
 
-16:19:28.824 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[6:55] Get user data by Id" classname="examples/smoke" time="0.335">
+    <system-out><![CDATA[16:19:28.824 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:28.831 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user/1
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -683,7 +806,15 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"email":"john.doe@wherever.com","id":1,"name":"John","surname":"Doe"}
 
-16:19:29.163 [main] INFO  com.intuit.karate - karate.env system property was: local 
+---------------------------------------------------------
+feature: classpath:examples/smoke.feature
+scenarios:  6 | passed:  6 | failed:  0 | time: 1,1206
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="[1:11] Cannot create booking for a non-existing user" classname="examples/bookings/booking_negative" time="0.219">
+    <system-out><![CDATA[16:19:29.163 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:29.173 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -724,7 +855,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"No user with id 9999"}
 
-16:19:29.384 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[2:20] Cannot create booking with wrong data formatting" classname="examples/bookings/booking_negative" time="0.16">
+    <system-out><![CDATA[16:19:29.384 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:29.391 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -765,7 +899,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1booking/post/requestBody/content/application~1json/schema","path":"/date"},"message":"must match format \"date\""}],"message":"Validation errors"}
 
-16:19:29.548 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[3:28] Reject booking creation when origin or destination is provided as full city names instead of 3‑letter airport codes" classname="examples/bookings/booking_negative" time="0.194">
+    <system-out><![CDATA[16:19:29.548 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:29.556 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -806,7 +943,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1booking/post/requestBody/content/application~1json/schema","path":"/destination"},"message":"must match pattern \"^[A-Z]{3}$\""}],"message":"Validation errors"}
 
-16:19:29.742 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[4:36] Reject booking creation when origin or destination is provided in lower case" classname="examples/bookings/booking_negative" time="0.132">
+    <system-out><![CDATA[16:19:29.742 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:29.749 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -847,7 +987,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1booking/post/requestBody/content/application~1json/schema","path":"/destination"},"message":"must match pattern \"^[A-Z]{3}$\""}],"message":"Validation errors"}
 
-16:19:29.876 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[5:44] Reject booking creation when origin or destination length is less than 3 characters" classname="examples/bookings/booking_negative" time="0.153">
+    <system-out><![CDATA[16:19:29.876 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:29.884 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -888,7 +1031,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1booking/post/requestBody/content/application~1json/schema","path":"/destination"},"message":"must match pattern \"^[A-Z]{3}$\""}],"message":"Validation errors"}
 
-16:19:30.030 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[6:52] Reject booking creation when userId is string" classname="examples/bookings/booking_negative" time="0.141">
+    <system-out><![CDATA[16:19:30.030 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:30.037 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -929,7 +1075,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1booking/post/requestBody/content/application~1json/schema","path":"/userId"},"message":"must be number"}],"message":"Validation errors"}
 
-16:19:30.175 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[7:60] Reject booking creation without origin field" classname="examples/bookings/booking_negative" time="0.173">
+    <system-out><![CDATA[16:19:30.175 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:30.183 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -970,7 +1119,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1booking/post/requestBody/content/application~1json/schema","path":""},"message":"must have required property 'origin'"}],"message":"Validation errors"}
 
-16:19:30.349 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[8:68] Reject booking creation when date field is empty" classname="examples/bookings/booking_negative" time="0.121">
+    <system-out><![CDATA[16:19:30.349 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:30.354 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -1011,7 +1163,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1booking/post/requestBody/content/application~1json/schema","path":"/date"},"message":"must match format \"date\""}],"message":"Validation errors"}
 
-16:19:30.474 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[9:76] Reject booking creation when userId is negative" classname="examples/bookings/booking_negative" time="0.196">
+    <system-out><![CDATA[16:19:30.474 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:30.481 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -1052,7 +1207,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1booking/post/requestBody/content/application~1json/schema","path":"/userId"},"message":"must be >= 1"}],"message":"Validation errors"}
 
-16:19:30.672 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[10:84] Cannot create booking with empty JSON object" classname="examples/bookings/booking_negative" time="0.145">
+    <system-out><![CDATA[16:19:30.672 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:30.679 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -1093,7 +1251,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1booking/post/requestBody/content/application~1json/schema","path":""},"message":"must have required property 'date'"}],"message":"Validation errors"}
 
-16:19:30.821 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[11:92] Reject getting booking by id with non-numeric id" classname="examples/bookings/booking_negative" time="0.136">
+    <system-out><![CDATA[16:19:30.821 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:30.829 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking/ABC
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -1132,7 +1293,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"path","name":"id","docPath":"/paths/~1booking~1{id}/get/parameters/0/schema","path":""},"message":"must be integer"}],"message":"Validation errors"}
 
-16:19:30.959 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[12:98] Reject getting booking with wrong booking id" classname="examples/bookings/booking_negative" time="0.167">
+    <system-out><![CDATA[16:19:30.959 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:30.964 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking/9999
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -1171,7 +1335,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"No booking with id 9999"}
 
-16:19:31.128 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[13:105] Reject providing bookings without userId" classname="examples/bookings/booking_negative" time="0.208">
+    <system-out><![CDATA[16:19:31.128 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:31.133 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -1212,7 +1379,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"Invalid content-type: application/json; charset=UTF-8"}
 
-16:19:31.340 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[14:113] Reject providing bookings without date" classname="examples/bookings/booking_negative" time="0.123">
+    <system-out><![CDATA[16:19:31.340 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:31.344 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -1253,7 +1423,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"Invalid content-type: application/json; charset=UTF-8"}
 
-16:19:31.461 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[15:122] Reject providing bookings with wrong data formatting" classname="examples/bookings/booking_negative" time="0.313">
+    <system-out><![CDATA[16:19:31.461 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:31.461 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -1294,7 +1467,15 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"Invalid content-type: application/json; charset=UTF-8"}
 
-16:19:31.778 [main] INFO  com.intuit.karate - karate.env system property was: local 
+---------------------------------------------------------
+feature: classpath:examples/bookings/booking_negative.feature
+scenarios: 15 | passed: 15 | failed:  0 | time: 2,3276
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="[1.1:20] Create booking with 2 valid IATA-like codes" classname="examples/bookings/booking_positive" time="0.158">
+    <system-out><![CDATA[16:19:31.778 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:31.778 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -1334,7 +1515,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"date":"2026-01-30","destination":"LWO","id":14,"origin":"KRK","userId":1}
 
-16:19:31.934 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[1.2:21] Create booking with 2 valid IATA-like codes" classname="examples/bookings/booking_positive" time="0.126">
+    <system-out><![CDATA[16:19:31.934 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:31.948 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -1374,7 +1558,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"date":"2026-01-30","destination":"WAW","id":15,"origin":"FRA","userId":2}
 
-16:19:32.076 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[2:25] Create 2 booking with the same data" classname="examples/bookings/booking_positive" time="0.255">
+    <system-out><![CDATA[16:19:32.076 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:32.076 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -1450,7 +1637,10 @@ not json
 2 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"date":"2026-01-30","destination":"USA","id":17,"origin":"KRK","userId":1}
 
-16:19:32.333 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[3:39] Create booking with identical origin and destination codes" classname="examples/bookings/booking_positive" time="0.131">
+    <system-out><![CDATA[16:19:32.333 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:32.337 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -1490,7 +1680,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"date":"2026-01-30","destination":"KRK","id":18,"origin":"KRK","userId":1}
 
-16:19:32.468 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[4:47] Create booking with a valid future date" classname="examples/bookings/booking_positive" time="1.28">
+    <system-out><![CDATA[16:19:32.468 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:32.473 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/booking
 1 > Content-Type: application/json; charset=UTF-8
@@ -1530,7 +1723,15 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"date":"2030-01-30","destination":"USA","id":19,"origin":"KRK","userId":1}
 
-16:19:33.748 [main] INFO  com.intuit.karate - karate.env system property was: local 
+---------------------------------------------------------
+feature: classpath:examples/bookings/booking_positive.feature
+scenarios:  5 | passed:  5 | failed:  0 | time: 1,8433
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="[1:10] Cannot create user without email" classname="examples/users/users_negative" time="0.177">
+    <system-out><![CDATA[16:19:33.748 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:33.748 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -1571,7 +1772,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1user/post/requestBody/content/application~1json/schema","path":""},"message":"must have required property 'email'"}],"message":"Validation errors"}
 
-16:19:33.923 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[2:18] Cannot create user without surname" classname="examples/users/users_negative" time="0.191">
+    <system-out><![CDATA[16:19:33.923 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:33.938 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -1612,7 +1816,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1user/post/requestBody/content/application~1json/schema","path":""},"message":"must have required property 'surname'"}],"message":"Validation errors"}
 
-16:19:34.114 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[3:26] Cannot create user without name" classname="examples/users/users_negative" time="0.127">
+    <system-out><![CDATA[16:19:34.114 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:34.114 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -1653,7 +1860,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1user/post/requestBody/content/application~1json/schema","path":""},"message":"must have required property 'name'"}],"message":"Validation errors"}
 
-16:19:34.241 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[4:34] Reject user creation when email value is numeric" classname="examples/users/users_negative" time="0.144">
+    <system-out><![CDATA[16:19:34.241 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:34.257 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -1694,7 +1904,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1user/post/requestBody/content/application~1json/schema","path":"/email"},"message":"must be string"}],"message":"Validation errors"}
 
-16:19:34.401 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[5:42] Cannot create user if name value is not a string" classname="examples/users/users_negative" time="0.127">
+    <system-out><![CDATA[16:19:34.401 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:34.401 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -1735,7 +1948,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1user/post/requestBody/content/application~1json/schema","path":"/name"},"message":"must be string"}],"message":"Validation errors"}
 
-16:19:34.528 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[6:50] User with given Id not found" classname="examples/users/users_negative" time="0.144">
+    <system-out><![CDATA[16:19:34.528 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:34.528 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user/189
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -1774,7 +1990,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"No user with id 189"}
 
-16:19:34.656 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[7:56] User with given email exists already" classname="examples/users/users_negative" time="0.27">
+    <system-out><![CDATA[16:19:34.656 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:34.656 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -1851,7 +2070,10 @@ not json
 2 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":null,"message":"User with email 'user_1769786374656@example.com' already exists"}
 
-16:19:34.926 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[8:70] User cannot be created if the name field is empty" classname="examples/users/users_negative" time="0.144">
+    <system-out><![CDATA[16:19:34.926 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:34.926 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -1892,7 +2114,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1user/post/requestBody/content/application~1json/schema","path":"/name"},"message":"must NOT have fewer than 1 characters"}],"message":"Validation errors"}
 
-16:19:35.070 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[9:78] User returns 400 for invalid (non‑numeric) id" classname="examples/users/users_negative" time="0.145">
+    <system-out><![CDATA[16:19:35.070 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:35.086 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user/abc
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -1931,7 +2156,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"path","name":"id","docPath":"/paths/~1user~1{id}/get/parameters/0/schema","path":""},"message":"must be integer"}],"message":"Validation errors"}
 
-16:19:35.215 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[10:84] Cannot create user with empty JSON object" classname="examples/users/users_negative" time="0.28">
+    <system-out><![CDATA[16:19:35.215 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:35.231 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -1972,7 +2200,15 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"errors":[{"location":{"in":"request","name":"body","docPath":"/paths/~1user/post/requestBody/content/application~1json/schema","path":""},"message":"must have required property 'email'"}],"message":"Validation errors"}
 
-16:19:35.499 [main] INFO  com.intuit.karate - karate.env system property was: local 
+---------------------------------------------------------
+feature: classpath:examples/users/users_negative.feature
+scenarios: 10 | passed: 10 | failed:  0 | time: 1,5591
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="[1:12] Create user with explicit Accept and Content-Type headers" classname="examples/users/users_positive" time="0.158">
+    <system-out><![CDATA[16:19:35.499 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:35.536 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Accept: application/json
@@ -2013,7 +2249,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"email":"user_1769786375507@example.com","id":17,"name":"#(name)","surname":"#(surname)"}
 
-16:19:35.677 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[2:24] Verify user response schema structure is correct" classname="examples/users/users_positive" time="0.129">
+    <system-out><![CDATA[16:19:35.677 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:35.677 [main] DEBUG com.intuit.karate - request:
 1 > GET https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user/1
 1 > Host: refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev
@@ -2051,7 +2290,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"email":"john.doe@wherever.com","id":1,"name":"John","surname":"Doe"}
 
-16:19:35.808 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[3:33] Create user with name and surname in lowercase" classname="examples/users/users_positive" time="0.124">
+    <system-out><![CDATA[16:19:35.808 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:35.811 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -2091,7 +2333,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"email":"user_1769786375811@example.com","id":18,"name":"nastja","surname":"demchyk"}
 
-16:19:35.942 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[4:41] Create user with name and surname in uppercase" classname="examples/users/users_positive" time="0.167">
+    <system-out><![CDATA[16:19:35.942 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:35.952 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -2131,7 +2376,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"email":"user_1769786375944@example.com","id":19,"name":"NASTJA","surname":"DEMCHYK"}
 
-16:19:36.097 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[5:49] Create new user with whitespaces at the beginning and at the end of name and surname" classname="examples/users/users_positive" time="0.136">
+    <system-out><![CDATA[16:19:36.097 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:36.103 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -2171,7 +2419,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"email":"user_1769786376101@example.com","id":20,"name":" Nastja ","surname":" Demchyk "}
 
-16:19:36.231 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[6:57] Create a new user with first name and surname written in the cyrillic alphabet" classname="examples/users/users_positive" time="0.145">
+    <system-out><![CDATA[16:19:36.231 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:36.247 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -2211,7 +2462,10 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"email":"user_1769786376247@example.com","id":21,"name":"Анастасія","surname":"Демчик"}
 
-16:19:36.386 [main] INFO  com.intuit.karate - karate.env system property was: local 
+]]></system-out>
+  </testcase>
+  <testcase name="[7:65] Create a new user with special characters in the first name and surname" classname="examples/users/users_positive" time="0.45">
+    <system-out><![CDATA[16:19:36.386 [main] INFO  com.intuit.karate - karate.env system property was: local 
 16:19:36.390 [main] DEBUG com.intuit.karate - request:
 1 > POST https://refactored-broccoli-g44rjw7g5ggpcw7wx-8900.app.github.dev/user
 1 > Content-Type: application/json; charset=UTF-8
@@ -2251,3 +2505,22 @@ not json
 1 < X-Served-By: tunnels-prod-rel-euw-v3-cluster
 {"email":"user_1769786376390@example.com","id":22,"name":"123Nastja@!","surname":"?Demchyk%"}
 
+---------------------------------------------------------
+feature: classpath:examples/users/users_positive.feature
+scenarios:  7 | passed:  7 | failed:  0 | time: 0,9672
+---------------------------------------------------------
+
+Karate version: 1.5.0 | env: local
+======================================================
+elapsed:  15,84 | threads:    1 | thread time: 11,77 
+features:     6 | skipped:    0 | efficiency: 0,74
+scenarios:   55 | passed:    55 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0 | env: local
+file:///C:/Users/ademchyk/Desktop/Projects/api-challenge-karate/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

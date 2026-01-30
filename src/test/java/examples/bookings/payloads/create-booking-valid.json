@@ -1,5 +1,5 @@
 {
-  "date": "#(utils.currentDate())",
+  "date": "2025-01-30",
   "destination": "USA",
   "origin": "KRK",
   "userId": 1

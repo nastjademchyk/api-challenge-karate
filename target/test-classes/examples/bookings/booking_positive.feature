@@ -19,3 +19,34 @@ Feature: Booking Positive Tests
       | dest | orig | userid |
       | LWO  | KRK  | 1      |
       | WAW  | FRA  | 2      |
+
+
+  @functional @medium
+  Scenario: Create 2 booking with the same data
+    * def payload = read('classpath:examples/bookings/payloads/create-booking-same-data.json')
+    Given path 'booking'
+    And request payload
+    When method post
+    Then status 201
+
+    Given path 'booking'
+    And request payload
+    When method post
+    Then status 201
+
+
+  @functional @low
+  Scenario: Create booking with identical origin and destination codes
+    * def payload = read('classpath:examples/bookings/payloads/create-booking-same-destination-origin.json')
+    Given path 'booking'
+    And request payload
+    When method post
+    Then status 201
+
+  @functional @high
+Scenario: Create booking with a valid future date
+  * def payload = read('classpath:examples/bookings/payloads/create-booking-future-date.json')
+  Given path 'booking'
+  And request payload
+  When method post
+  Then status 201

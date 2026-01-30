@@ -1,0 +1,5 @@
+{
+  "email": "#(utils.randomEmail())",
+  "name": "123Nastja@!",
+  "surname": "?Demchyk%"
+}

@@ -1,4 +1,2 @@
-TestRunner.class
+examples\TestRunner.class
 examples\ExamplesTest.class
-examples\bookings\BookingsRunner.class
-examples\users\UsersRunner.class
